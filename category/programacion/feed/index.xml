@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Programación &#8211; Quantium</title>
+	<atom:link href="/category/programacion/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Wed, 13 May 2015 20:56:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Subiendo viejos proyectos a github</title>
+		<link>/2014/07/04/subiendo-viejos-proyectos-a-github/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Fri, 04 Jul 2014 14:26:51 +0000</pubDate>
+				<category><![CDATA[AIR]]></category>
+		<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[Git]]></category>
+		<category><![CDATA[PaperVision3d]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[Technology]]></category>
+		<category><![CDATA[Actionscript]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[programador]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[web development]]></category>
+		<guid isPermaLink="false">/?p=451</guid>
+
+					<description><![CDATA[<p>Hace 4 años hice un pequeño ejemplo de Detección de Movimiento con ActionScript 3. Y aunque flash ya murió hace mucho (Aunque otros opinen lo contrario) hay personas que siguen haciendo comentarios respecto al experimiento y preguntando por el código, así que lo busqué entre mis discos de respaldo viejos y helo aquí, lo subí [&#8230;]</p>
+<p>The post <a href="/2014/07/04/subiendo-viejos-proyectos-a-github/" target="_blank">Subiendo viejos proyectos a github</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Git y las malas costumbres</title>
+		<link>/2014/02/24/git-y-las-malas-costumbres/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 25 Feb 2014 01:27:43 +0000</pubDate>
+				<category><![CDATA[Git]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/?p=343</guid>
+
+					<description><![CDATA[<p>En este artículo describo el peor manejo que considero para Git después de años de usarlo y otros tantos de usar otros Sistemas de Control de Versiones.</p>
+<p>The post <a href="/2014/02/24/git-y-las-malas-costumbres/" target="_blank">Git y las malas costumbres</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Metodologías de Desarrollo de Software (Parte 1)</title>
+		<link>/2014/01/18/metodologias-de-desarrollo-de-software-1/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Sat, 18 Jan 2014 20:14:11 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Management]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[agile]]></category>
+		<category><![CDATA[digital]]></category>
+		<category><![CDATA[itil]]></category>
+		<category><![CDATA[metodologia]]></category>
+		<category><![CDATA[programador]]></category>
+		<category><![CDATA[pubicista]]></category>
+		<category><![CDATA[publicidad]]></category>
+		<category><![CDATA[rup]]></category>
+		<category><![CDATA[scrum]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[web development]]></category>
+		<guid isPermaLink="false">/?p=440</guid>
+
+					<description><![CDATA[<p>William de Ockham (El de la famosa navaja) pensaba que el ser humano organiza su pensamiento diseccionando los conceptos para poder entenderlos mejor, &#8220;Diseccionar para analizar&#8221;, y es así como logra formar una perspectiva importante al rededor de las ideas lunares de Platón resolviendo el problema epistemológico donde los conceptos tienden a ser mayores que los [&#8230;]</p>
+<p>The post <a href="/2014/01/18/metodologias-de-desarrollo-de-software-1/" target="_blank">Metodologías de Desarrollo de Software (Parte 1)</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Como funciona Node.js</title>
+		<link>/2012/08/06/nodejs/</link>
+					<comments>/2012/08/06/nodejs/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 06 Aug 2012 22:03:22 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[comet]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[npm.js]]></category>
+		<category><![CDATA[serverside]]></category>
+		<category><![CDATA[socket.is]]></category>
+		<guid isPermaLink="false">/?p=320</guid>
+
+					<description><![CDATA[<p>Node.js, en resumidas cuentas, es una plataforma para utilizar javascript del lado del servidor, se podría decir, aunque no de manera muy exacta, que hace las veces de php, asp o jsp. Y digo que no de manera muy exacta porque cada lenguaje tiene sus restricciones, por ejemplo php está planeado para ser un script [&#8230;]</p>
+<p>The post <a href="/2012/08/06/nodejs/" target="_blank">Como funciona Node.js</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2012/08/06/nodejs/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ahora que flash murió.</title>
+		<link>/2011/11/14/ahora-que-flash-murio/</link>
+					<comments>/2011/11/14/ahora-que-flash-murio/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 14 Nov 2011 15:29:12 +0000</pubDate>
+				<category><![CDATA[AIR]]></category>
+		<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[PaperVision3d]]></category>
+		<category><![CDATA[Programación]]></category>
+		<guid isPermaLink="false">/2011/11/14/ahora-que-flash-murio/</guid>
+
+					<description><![CDATA[<p>Primero que nada, perd&#243;n por el t&#237;tulo amarillista, flash no ha muerto, s&#243;lo est&#225; agonizando y considero que segur&#225; en ese lamentable estado un par de a&#241;os m&#225;s, a menos que Adobe haga algo al respecto. Si alguien pudiera recordar a Director (L&#233;ase: Dairectohr), yo tuve el gusto de conocer a un par de divas [&#8230;]</p>
+<p>The post <a href="/2011/11/14/ahora-que-flash-murio/" target="_blank">Ahora que flash murió.</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2011/11/14/ahora-que-flash-murio/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Agenda de Adobe Camp México</title>
+		<link>/2011/09/13/agenda-de-adobe-camp-mexico/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 13 Sep 2011 14:18:01 +0000</pubDate>
+				<category><![CDATA[Conferencias]]></category>
+		<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Publicidad]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[AdobeCamp]]></category>
+		<category><![CDATA[AdobeExpress]]></category>
+		<category><![CDATA[Evento]]></category>
+		<category><![CDATA[Mesa Redonda]]></category>
+		<guid isPermaLink="false">/2011/09/13/agenda-de-adobe-camp-mexico/</guid>
+
+					<description><![CDATA[<p>El Viernes 29 de Septiembre me invitaron a participar en una mesa redonda en el Adobe Camp México. Estaré compartiendo mesa con Rolf Ruiz, primer evangelista de Flash en México, excelentísimo programador y muy creativo lider al cual tengo el gusto de conocer por algunos proyectos en los que hemos coincidido y porque, como toda [&#8230;]</p>
+<p>The post <a href="/2011/09/13/agenda-de-adobe-camp-mexico/" target="_blank">Agenda de Adobe Camp México</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+	                                          </channel>
+</rss>

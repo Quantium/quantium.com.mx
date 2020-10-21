@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Fractal3d	</title>
+	<atom:link href="/2007/10/30/fractal3d/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/10/30/fractal3d/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Tue, 11 Mar 2008 15:39:44 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+	<item>
+		<title>
+		By: Xquizo		</title>
+		<link>/2007/10/30/fractal3d/comment-page-1/#comment-34355</link>
+
+		<dc:creator><![CDATA[Xquizo]]></dc:creator>
+		<pubDate>Tue, 11 Mar 2008 15:39:44 +0000</pubDate>
+		<guid isPermaLink="false">/qlog/2007/10/30/fractal3d/#comment-34355</guid>
+
+					<description><![CDATA[Tambien deberias advertir que si lo dejas abierto por un tiempo frezea el navegador]]></description>
+			<content:encoded><![CDATA[<p>Tambien deberias advertir que si lo dejas abierto por un tiempo frezea el navegador</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Insane		</title>
+		<link>/2007/10/30/fractal3d/comment-page-1/#comment-33960</link>
+
+		<dc:creator><![CDATA[Insane]]></dc:creator>
+		<pubDate>Fri, 07 Mar 2008 17:44:54 +0000</pubDate>
+		<guid isPermaLink="false">/qlog/2007/10/30/fractal3d/#comment-33960</guid>
+
+					<description><![CDATA[mmm deberias mover la camara mas.]]></description>
+			<content:encoded><![CDATA[<p>mmm deberias mover la camara mas.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

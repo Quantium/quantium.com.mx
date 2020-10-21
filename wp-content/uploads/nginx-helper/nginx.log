@@ -1,0 +1,10 @@
+
+2019-06-04 04:55:48  | INFO | Purging media on edit BEGIN ===
+2019-06-04 04:55:48  | INFO | - Purging URL | https://d2phkobe5kpduw.cloudfront.net/wp-content/uploads/2019/06/03183959/isotopo-logo-2.png
+2019-06-04 04:55:48  | WARNING | - - https://d2phkobe5kpduw.cloudfront.net/purge/wp-content/uploads/2019/06/03183959/isotopo-logo-2.png not found ( 403 )
+2019-06-04 04:55:48  | INFO | - Purging URL | https://www.quantium.com.mx/isotopo-logo-3/
+2019-06-04 04:55:49  | INFO | - - https://www.quantium.com.mx/purge/isotopo-logo-3/ is currently not cached
+2019-06-04 04:55:49  | INFO | - - https://www.quantium.com.mx/purge/isotopo-logo-3/feed/ *** PURGED ***
+2019-06-04 04:55:49  | INFO | - - https://www.quantium.com.mx/purge/isotopo-logo-3/feed/atom/ *** PURGED ***
+2019-06-04 04:55:49  | INFO | - - https://www.quantium.com.mx/purge/isotopo-logo-3/feed/rdf/ *** PURGED ***
+2019-06-04 04:55:49  | INFO | Purging media on edit END ^^^

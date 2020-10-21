@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Marketing KPI &#8211; Quantium</title>
+	<atom:link href="/tag/marketing-kpi/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Tue, 28 Jun 2016 14:33:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>7 cosas que Big Data no va a resolver</title>
+		<link>/2014/09/29/7-cosas-que-big-data-no-va-a-resolver/</link>
+					<comments>/2014/09/29/7-cosas-que-big-data-no-va-a-resolver/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 29 Sep 2014 19:21:35 +0000</pubDate>
+				<category><![CDATA[Technology]]></category>
+		<category><![CDATA[analytics]]></category>
+		<category><![CDATA[big data]]></category>
+		<category><![CDATA[cloud computing]]></category>
+		<category><![CDATA[data mining]]></category>
+		<category><![CDATA[Digital transformation]]></category>
+		<category><![CDATA[estadística]]></category>
+		<category><![CDATA[estocástico]]></category>
+		<category><![CDATA[google analytics]]></category>
+		<category><![CDATA[Marketing KPI]]></category>
+		<guid isPermaLink="false">http://thoughts.ktcagency.com/?p=219</guid>
+
+					<description><![CDATA[<p>A veces creemos que Big Data es una especie de panacea, escuchamos el término y dejamos volar nuestra imaginación convirtiéndonos en víctimas de nuestras más absurdas fantasías profesionales para creer, por pura fe, que todos nuestros problemas están resueltos para darnos cuenta pronto que estábamos equivocados, encontrando muchas cosas que Big Data no va a resolver. [&#8230;]</p>
+<p>The post <a href="/2014/09/29/7-cosas-que-big-data-no-va-a-resolver/" target="_blank">7 cosas que Big Data no va a resolver</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2014/09/29/7-cosas-que-big-data-no-va-a-resolver/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	                                          </channel>
+</rss>

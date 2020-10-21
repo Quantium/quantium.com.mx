@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>digital competence &#8211; Quantium</title>
+	<atom:link href="/tag/digital-competence/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Wed, 13 May 2015 18:55:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Where are you in The Digital Transformation Process?</title>
+		<link>/2014/09/03/where-are-you-in-the-digital-transformation-process/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Wed, 03 Sep 2014 20:30:56 +0000</pubDate>
+				<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[Technology]]></category>
+		<category><![CDATA[digital competence]]></category>
+		<category><![CDATA[digital literacy]]></category>
+		<category><![CDATA[Digital transformation]]></category>
+		<category><![CDATA[digital usage]]></category>
+		<category><![CDATA[innovation]]></category>
+		<category><![CDATA[risks]]></category>
+		<category><![CDATA[ugly truth]]></category>
+		<guid isPermaLink="false">http://thoughts.ktcagency.com/?p=68</guid>
+
+					<description><![CDATA[<p>Everybody wants to talk about Digital transformation but before that It is necessary  to say that it is only the final stage of something bigger called Digital Literacy. The 3 stages of Digital Literacy There are 3 stages that concern Digital Literacy: Digital Competence, Digital Usage and, the one we are more interested in, Digital Transformation. Although It is true [&#8230;]</p>
+<p>The post <a href="/2014/09/03/where-are-you-in-the-digital-transformation-process/" target="_blank">Where are you in The Digital Transformation Process?</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+	                                          </channel>
+</rss>

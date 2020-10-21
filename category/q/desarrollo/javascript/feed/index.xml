@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>javascript &#8211; Quantium</title>
+	<atom:link href="/category/q/desarrollo/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Wed, 26 Feb 2014 22:13:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Como funciona Node.js</title>
+		<link>/2012/08/06/nodejs/</link>
+					<comments>/2012/08/06/nodejs/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 06 Aug 2012 22:03:22 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[comet]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[npm.js]]></category>
+		<category><![CDATA[serverside]]></category>
+		<category><![CDATA[socket.is]]></category>
+		<guid isPermaLink="false">/?p=320</guid>
+
+					<description><![CDATA[<p>Node.js, en resumidas cuentas, es una plataforma para utilizar javascript del lado del servidor, se podría decir, aunque no de manera muy exacta, que hace las veces de php, asp o jsp. Y digo que no de manera muy exacta porque cada lenguaje tiene sus restricciones, por ejemplo php está planeado para ser un script [&#8230;]</p>
+<p>The post <a href="/2012/08/06/nodejs/" target="_blank">Como funciona Node.js</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2012/08/06/nodejs/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	                                          </channel>
+</rss>

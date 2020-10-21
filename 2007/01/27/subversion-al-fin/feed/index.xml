@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Subversion al fin	</title>
+	<atom:link href="/2007/01/27/subversion-al-fin/feed/" rel="self" type="application/rss+xml" />
+	<link>/2007/01/27/subversion-al-fin/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Mon, 29 Jan 2007 07:28:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+	<item>
+		<title>
+		By: Juan Manuel		</title>
+		<link>/2007/01/27/subversion-al-fin/comment-page-1/#comment-311</link>
+
+		<dc:creator><![CDATA[Juan Manuel]]></dc:creator>
+		<pubDate>Mon, 29 Jan 2007 07:28:55 +0000</pubDate>
+		<guid isPermaLink="false">/qlog/2007/01/27/subversion-al-fin/#comment-311</guid>
+
+					<description><![CDATA[En la empresa en la que trabajo también tenemos problemas de ese estilo. Muchos ficheros, 2-4 personas trabajando en el mismo proyecto y un alto riesgo de sobreescribir cambios. ¿Tienes por ahí algún enlace interesante donde expliquen como instalar y configurar subversion?
+
+¡Suerte con el nuevo controlador de versiones!, y ya sabes, coméntanos que tal ve va ;)
+
+¡Un saludo!]]></description>
+			<content:encoded><![CDATA[<p>En la empresa en la que trabajo también tenemos problemas de ese estilo. Muchos ficheros, 2-4 personas trabajando en el mismo proyecto y un alto riesgo de sobreescribir cambios. ¿Tienes por ahí algún enlace interesante donde expliquen como instalar y configurar subversion?</p>
+<p>¡Suerte con el nuevo controlador de versiones!, y ya sabes, coméntanos que tal ve va ;)</p>
+<p>¡Un saludo!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

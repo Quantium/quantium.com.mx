@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>backrub &#8211; Quantium</title>
+	<atom:link href="/tag/backrub/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Sat, 06 Sep 2014 17:34:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Google y algunos de sus datos curiosos</title>
+		<link>/2011/02/07/google-y-algunos-de-sus-datos-curiosos/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 07 Feb 2011 18:23:55 +0000</pubDate>
+				<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[backrub]]></category>
+		<category><![CDATA[google]]></category>
+		<guid isPermaLink="false">http://blog.isotopo.net/?p=204</guid>
+
+					<description><![CDATA[<p>Google es el centro de internet, además de ser el buscador más usado,  es un imperio y no queda de otra a unirseles, aqui 10 curiosidades sobre Google: &#160; 1.- Google es un termino erróneo, la idea original era llamarlo gúgol, que es el nombre del numero 10 elevado a la 100. Como una metáfora [&#8230;]</p>
+<p>The post <a href="/2011/02/07/google-y-algunos-de-sus-datos-curiosos/" target="_blank">Google y algunos de sus datos curiosos</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+	                                          </channel>
+</rss>

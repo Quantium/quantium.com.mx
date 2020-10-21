@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>install &#8211; Quantium</title>
+	<atom:link href="/tag/install/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Sat, 27 Apr 2013 23:57:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Spotify en Ubuntu</title>
+		<link>/2013/04/27/spotify-en-ubuntu/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2013 23:41:50 +0000</pubDate>
+				<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[aptitude]]></category>
+		<category><![CDATA[debian]]></category>
+		<category><![CDATA[install]]></category>
+		<category><![CDATA[spotify]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">/?p=373</guid>
+
+					<description><![CDATA[<p>Vive una aventura llena de sudo, nano y aptitude instalando Spotify en Ubuntu</p>
+<p>The post <a href="/2013/04/27/spotify-en-ubuntu/" target="_blank">Spotify en Ubuntu</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+	                                          </channel>
+</rss>

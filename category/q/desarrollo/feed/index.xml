@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Desarrollo &#8211; Quantium</title>
+	<atom:link href="/category/q/desarrollo/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Wed, 13 May 2015 20:56:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Entrevistando becarios de tecnología para una agencia de marketing digital.</title>
+		<link>/2014/07/15/entrevistando-becarios-de-tecnologia-para-una-agencia-de-marketing-digital/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 15 Jul 2014 22:11:43 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Ignorancia]]></category>
+		<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[Publicidad]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[becarios]]></category>
+		<category><![CDATA[entrevistas]]></category>
+		<category><![CDATA[pasantes]]></category>
+		<category><![CDATA[Recursos humanos]]></category>
+		<category><![CDATA[RH]]></category>
+		<guid isPermaLink="false">/?p=457</guid>
+
+					<description><![CDATA[<p>Empieza el verano y acá en ktc se abre el programa de becarios, lo que me ha llevado a pasar las últimas 2 semanas entrevistando ingenieros en gestación de 4 universidades, 2 públicas y 2 privadas, desde 4 cuatrimestre hasta último semestre de la carrera o en proceso de titulación ya con todos los créditos [&#8230;]</p>
+<p>The post <a href="/2014/07/15/entrevistando-becarios-de-tecnologia-para-una-agencia-de-marketing-digital/" target="_blank">Entrevistando becarios de tecnología para una agencia de marketing digital.</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Subiendo viejos proyectos a github</title>
+		<link>/2014/07/04/subiendo-viejos-proyectos-a-github/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Fri, 04 Jul 2014 14:26:51 +0000</pubDate>
+				<category><![CDATA[AIR]]></category>
+		<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[Git]]></category>
+		<category><![CDATA[PaperVision3d]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[Technology]]></category>
+		<category><![CDATA[Actionscript]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[programador]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[web development]]></category>
+		<guid isPermaLink="false">/?p=451</guid>
+
+					<description><![CDATA[<p>Hace 4 años hice un pequeño ejemplo de Detección de Movimiento con ActionScript 3. Y aunque flash ya murió hace mucho (Aunque otros opinen lo contrario) hay personas que siguen haciendo comentarios respecto al experimiento y preguntando por el código, así que lo busqué entre mis discos de respaldo viejos y helo aquí, lo subí [&#8230;]</p>
+<p>The post <a href="/2014/07/04/subiendo-viejos-proyectos-a-github/" target="_blank">Subiendo viejos proyectos a github</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Metodologías de Desarrollo de Software (Parte 1)</title>
+		<link>/2014/01/18/metodologias-de-desarrollo-de-software-1/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Sat, 18 Jan 2014 20:14:11 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Management]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[agile]]></category>
+		<category><![CDATA[digital]]></category>
+		<category><![CDATA[itil]]></category>
+		<category><![CDATA[metodologia]]></category>
+		<category><![CDATA[programador]]></category>
+		<category><![CDATA[pubicista]]></category>
+		<category><![CDATA[publicidad]]></category>
+		<category><![CDATA[rup]]></category>
+		<category><![CDATA[scrum]]></category>
+		<category><![CDATA[software]]></category>
+		<category><![CDATA[web development]]></category>
+		<guid isPermaLink="false">/?p=440</guid>
+
+					<description><![CDATA[<p>William de Ockham (El de la famosa navaja) pensaba que el ser humano organiza su pensamiento diseccionando los conceptos para poder entenderlos mejor, &#8220;Diseccionar para analizar&#8221;, y es así como logra formar una perspectiva importante al rededor de las ideas lunares de Platón resolviendo el problema epistemológico donde los conceptos tienden a ser mayores que los [&#8230;]</p>
+<p>The post <a href="/2014/01/18/metodologias-de-desarrollo-de-software-1/" target="_blank">Metodologías de Desarrollo de Software (Parte 1)</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Como funciona Node.js</title>
+		<link>/2012/08/06/nodejs/</link>
+					<comments>/2012/08/06/nodejs/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 06 Aug 2012 22:03:22 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[comet]]></category>
+		<category><![CDATA[google]]></category>
+		<category><![CDATA[npm.js]]></category>
+		<category><![CDATA[serverside]]></category>
+		<category><![CDATA[socket.is]]></category>
+		<guid isPermaLink="false">/?p=320</guid>
+
+					<description><![CDATA[<p>Node.js, en resumidas cuentas, es una plataforma para utilizar javascript del lado del servidor, se podría decir, aunque no de manera muy exacta, que hace las veces de php, asp o jsp. Y digo que no de manera muy exacta porque cada lenguaje tiene sus restricciones, por ejemplo php está planeado para ser un script [&#8230;]</p>
+<p>The post <a href="/2012/08/06/nodejs/" target="_blank">Como funciona Node.js</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2012/08/06/nodejs/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ahora que flash murió.</title>
+		<link>/2011/11/14/ahora-que-flash-murio/</link>
+					<comments>/2011/11/14/ahora-que-flash-murio/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 14 Nov 2011 15:29:12 +0000</pubDate>
+				<category><![CDATA[AIR]]></category>
+		<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[PaperVision3d]]></category>
+		<category><![CDATA[Programación]]></category>
+		<guid isPermaLink="false">/2011/11/14/ahora-que-flash-murio/</guid>
+
+					<description><![CDATA[<p>Primero que nada, perd&#243;n por el t&#237;tulo amarillista, flash no ha muerto, s&#243;lo est&#225; agonizando y considero que segur&#225; en ese lamentable estado un par de a&#241;os m&#225;s, a menos que Adobe haga algo al respecto. Si alguien pudiera recordar a Director (L&#233;ase: Dairectohr), yo tuve el gusto de conocer a un par de divas [&#8230;]</p>
+<p>The post <a href="/2011/11/14/ahora-que-flash-murio/" target="_blank">Ahora que flash murió.</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2011/11/14/ahora-que-flash-murio/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Agenda de Adobe Camp México</title>
+		<link>/2011/09/13/agenda-de-adobe-camp-mexico/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 13 Sep 2011 14:18:01 +0000</pubDate>
+				<category><![CDATA[Conferencias]]></category>
+		<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[Programación]]></category>
+		<category><![CDATA[Publicidad]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[AdobeCamp]]></category>
+		<category><![CDATA[AdobeExpress]]></category>
+		<category><![CDATA[Evento]]></category>
+		<category><![CDATA[Mesa Redonda]]></category>
+		<guid isPermaLink="false">/2011/09/13/agenda-de-adobe-camp-mexico/</guid>
+
+					<description><![CDATA[<p>El Viernes 29 de Septiembre me invitaron a participar en una mesa redonda en el Adobe Camp México. Estaré compartiendo mesa con Rolf Ruiz, primer evangelista de Flash en México, excelentísimo programador y muy creativo lider al cual tengo el gusto de conocer por algunos proyectos en los que hemos coincidido y porque, como toda [&#8230;]</p>
+<p>The post <a href="/2011/09/13/agenda-de-adobe-camp-mexico/" target="_blank">Agenda de Adobe Camp México</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Detección de movimiento con ActionScript 3.0</title>
+		<link>/2010/11/03/deteccion-de-movimiento-con-actionscript-3-0/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Wed, 03 Nov 2010 18:32:34 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[Actionscript]]></category>
+		<category><![CDATA[movimiento]]></category>
+		<category><![CDATA[webcam]]></category>
+		<guid isPermaLink="false">/?p=218</guid>
+
+					<description><![CDATA[<p>Primero mira el video: [embedyt]http://www.youtube.com/watch?v=VOQVHKK9goE[/embedyt] Usamos el principio de la diferencia de pixeles sobre el bitmapdata del video: MovementDetection1 Acá está el swf: MovementDetection2 Luego pongo el código que tengo retiharta chamba. Update Agregué el codigo a mi cuenta de github aquí: https://github.com/Quantium/MovementDetectionAS3</p>
+<p>The post <a href="/2010/11/03/deteccion-de-movimiento-con-actionscript-3-0/" target="_blank">Detección de movimiento con ActionScript 3.0</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Sockets Binarios, ActionScript 3 + Java</title>
+		<link>/2008/05/06/sockets-binarios-actionscript-3-java/</link>
+					<comments>/2008/05/06/sockets-binarios-actionscript-3-java/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Wed, 07 May 2008 00:38:39 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/?p=164</guid>
+
+					<description><![CDATA[<p>De las preguntas que más me hacen es como conectar un socket con actionscript. El problema generalmente es que muchos tienen el código correcto para conectarse en ActionScript pero no lo tienen del lado del servidor. Aquí pongo un ejemplo sencillo, 2 proyectos para eclipse uno en Java que es una versión sencilla de un [&#8230;]</p>
+<p>The post <a href="/2008/05/06/sockets-binarios-actionscript-3-java/" target="_blank">Sockets Binarios, ActionScript 3 + Java</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2008/05/06/sockets-binarios-actionscript-3-java/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fractal3d</title>
+		<link>/2007/10/30/fractal3d/</link>
+					<comments>/2007/10/30/fractal3d/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 30 Oct 2007 19:56:46 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[PaperVision3d]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/10/30/fractal3d/</guid>
+
+					<description><![CDATA[<p>Hace unos días estaba leyendo este post en FlashBrighton en el que plantean una manera sencilla y clara de hacer fractales en flash. Pues aquí está mi versión utilizando el mismo algoritmo pero con papervision3d No quedó muy optimizado, no le invertí mucho tiempo, pero es un buen ejemplo.</p>
+<p>The post <a href="/2007/10/30/fractal3d/" target="_blank">Fractal3d</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2007/10/30/fractal3d/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>5 casas de Albert Einstein</title>
+		<link>/2007/10/26/5-casas-de-albert-einstein/</link>
+					<comments>/2007/10/26/5-casas-de-albert-einstein/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Fri, 26 Oct 2007 23:04:36 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/10/26/5-casas-de-albert-einstein/</guid>
+
+					<description><![CDATA[<p>Este juego de lógica fue postulado por Albert Einstein. El Dr Einstein decía que sólo el 2% de la población podría resolver este acertijo. Yo digo que eso fue hace mucho tiempo, en realidad el acertijo no es tan complicado, es sólo cosa de echarle coco un ratito, yo me tarde como 25 minutos en [&#8230;]</p>
+<p>The post <a href="/2007/10/26/5-casas-de-albert-einstein/" target="_blank">5 casas de Albert Einstein</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2007/10/26/5-casas-de-albert-einstein/feed/</wfw:commentRss>
+			<slash:comments>45</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Taller de VideoJuegos con ActionScript en el CISC</title>
+		<link>/2007/10/01/taller-de-videojuegos-con-actionscript-en-el-cisc/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 01 Oct 2007 15:43:23 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[PaperVision3d]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/10/01/taller-de-videojuegos-con-actionscript-en-el-cisc/</guid>
+
+					<description><![CDATA[<p>El 4 y el 5 de Octubre impartiré un taller en el Congreso Internacional de Sistemas Computacionales, esto será en el Tecnológico de Monterrey campus Guadalajara. Para mayor información visitar la página del Congreso</p>
+<p>The post <a href="/2007/10/01/taller-de-videojuegos-con-actionscript-en-el-cisc/" target="_blank">Taller de VideoJuegos con ActionScript en el CISC</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Marketing viral directamente proporcional</title>
+		<link>/2007/09/17/marketing-viral-directamente-proporcional/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 18 Sep 2007 00:17:26 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/09/17/marketing-viral-directamente-proporcional/</guid>
+
+					<description><![CDATA[<p>Muchos piensan que para crear una promoción exitosa de marketing viral se necesita darle montones de cosas(widgets, Gb, juegos, etc) al usuario. Algunos otros simplifican el marketing viral como un simple link donde registran visitas y se atienen a un sitio muy creativo con producciones muy costosas, aunque la realidad de estos sitios es que [&#8230;]</p>
+<p>The post <a href="/2007/09/17/marketing-viral-directamente-proporcional/" target="_blank">Marketing viral directamente proporcional</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Feliz día del programador</title>
+		<link>/2007/09/13/feliz-dia-del-programador/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Thu, 13 Sep 2007 18:56:48 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/09/13/feliz-dia-del-programador/</guid>
+
+					<description><![CDATA[<p>Pues bien, hoy es el día 256 del año y en este día se festeja a los programadores (como yo). Así que si tienes un programador a lado dale un buen regalo, un redbull, una taza de café illy, un ciento de Discos Virgenes, un USB de 2 GB, un videojuego o más RAM. Cualquier [&#8230;]</p>
+<p>The post <a href="/2007/09/13/feliz-dia-del-programador/" target="_blank">Feliz día del programador</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Oferta de Trabajo (ActionScript)</title>
+		<link>/2007/09/11/oferta-de-trabajo-actionscript/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 11 Sep 2007 17:13:09 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/09/11/oferta-de-trabajo-actionscript/</guid>
+
+					<description><![CDATA[<p>Interalia está solicitando Programadores ActionScript para integrarse a nuestro maravilloso equipo de trabajo. Grandes posibilidades de crecimiento y aprendizaje, buen ambiente. Empresa lider en Latinoamérica en Marketing web y desarrollo de juegos y comunidades online. Requisitos Amplio conocimiento de AS2.0 Experiéncia mínima en AS3.0 Conocimientos Básicos de Patrones de Diseño Familiarizados con Programación a Objetos [&#8230;]</p>
+<p>The post <a href="/2007/09/11/oferta-de-trabajo-actionscript/" target="_blank">Oferta de Trabajo (ActionScript)</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Grave vulnerabilidad en archivos flv</title>
+		<link>/2007/07/27/grave-vulnerabilidad-en-archivos-flv/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Fri, 27 Jul 2007 22:27:02 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/07/27/grave-vulnerabilidad-en-archivos-flv/</guid>
+
+					<description><![CDATA[<p>Mind Security descubró una vulnerabilidad en el flash player de adobe, la cual se puede explotar modificando las cabeceras de cualquier archivo flv y repróduciéndolo. Según lo descubierto la vulnerabilidad freezea el explorador completo volcando la memoria y posibilitando el acceso a la ejecución de código y una posible denegación de servicio. Esto sucede en [&#8230;]</p>
+<p>The post <a href="/2007/07/27/grave-vulnerabilidad-en-archivos-flv/" target="_blank">Grave vulnerabilidad en archivos flv</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Similitud Silverlight-Flash (funny)</title>
+		<link>/2007/05/04/similitud-silverlight-flash-funny/</link>
+					<comments>/2007/05/04/similitud-silverlight-flash-funny/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Fri, 04 May 2007 22:02:22 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/05/04/similitud-silverlight-flash-funny/</guid>
+
+					<description><![CDATA[<p>Este es un screenshot de lo que me pasó navegando por este ejemplo de silverlight: http://silverlight.net/samples/1.0/Ink-Tattoo-Studio/default.html</p>
+<p>The post <a href="/2007/05/04/similitud-silverlight-flash-funny/" target="_blank">Similitud Silverlight-Flash (funny)</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2007/05/04/similitud-silverlight-flash-funny/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Apollo Binary Clock</title>
+		<link>/2007/04/16/apollo-binary-clock/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 16 Apr 2007 21:49:27 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/04/16/apollo-binary-clock/</guid>
+
+					<description><![CDATA[<p>Here is a Quantium&#8217;s Binary Clock widget. Is it an Alpha Version. Please post wished functions here. Download Widget Here.</p>
+<p>The post <a href="/2007/04/16/apollo-binary-clock/" target="_blank">Apollo Binary Clock</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Qonsole reborned</title>
+		<link>/2007/03/23/qonsole-reborned/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Sat, 24 Mar 2007 01:32:37 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/03/24/qonsole-reborned/</guid>
+
+					<description><![CDATA[<p>Ha pasado mucho tiempo ya desde que Qonsole fué abandonado. Algunas de las razones fueron el tiempo, el trabajo y las limitantes de la plataforma. Recientemente con el surgimiento de Apollo y la generosa iniciativa de Google Code he decidido retomar el proyecto nuevamente, ahora claro con ayudado por la mancuerna adobera, Flex-AS3-Apollo, con la [&#8230;]</p>
+<p>The post <a href="/2007/03/23/qonsole-reborned/" target="_blank">Qonsole reborned</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>ActionScript 3 Mató al singleton</title>
+		<link>/2007/03/12/actionscript-3-mato-al-singleton/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 12 Mar 2007 16:24:20 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/03/12/actionscript-3-mato-al-singleton/</guid>
+
+					<description><![CDATA[<p>Cual será mi sorpresa cuando leyendo la documentación de AS3 me doy cuenta de que este no permite contructores privados, por ende para poder hacer un síngleton hay que tirar unas execpciones en el constructor al cual se le pasa un this como parámetro para verificar que el ejecutor sea la clase. Además de que [&#8230;]</p>
+<p>The post <a href="/2007/03/12/actionscript-3-mato-al-singleton/" target="_blank">ActionScript 3 Mató al singleton</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Subversion al fin</title>
+		<link>/2007/01/27/subversion-al-fin/</link>
+					<comments>/2007/01/27/subversion-al-fin/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Sun, 28 Jan 2007 01:38:39 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/2007/01/27/subversion-al-fin/</guid>
+
+					<description><![CDATA[<p>Después de una larga espera al fin implementamos el sistema de control de versiones en el trabajo, actualmente está sólo para pruebas y revisar la configuración. El esquema de trabajo que hemos platicado es bloquear los archivos binarios como .fla y .jpg cuando se estén editando y utilizar el esquema de copiar-modificar-fusionar para los .as. [&#8230;]</p>
+<p>The post <a href="/2007/01/27/subversion-al-fin/" target="_blank">Subversion al fin</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2007/01/27/subversion-al-fin/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Perspectiva AS1 a AS2</title>
+		<link>/2006/12/05/perspectiva-as1-a-as2/</link>
+					<comments>/2006/12/05/perspectiva-as1-a-as2/#comments</comments>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Wed, 06 Dec 2006 00:01:58 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/?p=28</guid>
+
+					<description><![CDATA[<p>Esta es la respuesta a este post de flashla&#160; La orientaci&#243;n a objetos es s&#243;lo para que el c&#243;digo sea m&#225;s ordenado, legible y se acerque m&#225;s a la manera en la que el ser humano concibe la realidad, asi que para transformar tu c&#243;digo vamos a seguir algunos pasos b&#225;sicos que s&#243;lo requieren orden, [&#8230;]</p>
+<p>The post <a href="/2006/12/05/perspectiva-as1-a-as2/" target="_blank">Perspectiva AS1 a AS2</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+					<wfw:commentRss>/2006/12/05/perspectiva-as1-a-as2/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Game Development</title>
+		<link>/2006/11/13/game-development/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Mon, 13 Nov 2006 15:42:58 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/?p=23</guid>
+
+					<description><![CDATA[<p>Por fin lunes. &#160;Llego a&#160;la oficina&#160;me conecto para revisar como va el &#250;ltimo jueguito que desarroll&#233;, no es nada especial, s&#243;lo un jueguillo de unas fichas sencillo (Aunque en realidad d&#237;o m&#225;s trabajo el contenedor) con los m&#225;s recientes personajes navide&#241;os del cliente. Al parecer ha tenido bastante &#233;xito, desde el viernes en la tarde [&#8230;]</p>
+<p>The post <a href="/2006/11/13/game-development/" target="_blank">Game Development</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Programación Orientada a Resultados</title>
+		<link>/2006/11/03/programacion-orientada-a-resultados/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Fri, 03 Nov 2006 21:46:24 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/?p=21</guid>
+
+					<description><![CDATA[<p>¡Ah, cómo cambian las cosas! De año en año, de sexenio en sexenio de trabajo en trabajo. Acabo de terminar un contenedor de juegos, una idea práctica para tener un sólo contenedor para juegos multiusuario y sólamente montar la funcionalidad del juego en Cuestión; La verdad no me gustó nadita como quedó, me hubiera gustado [&#8230;]</p>
+<p>The post <a href="/2006/11/03/programacion-orientada-a-resultados/" target="_blank">Programación Orientada a Resultados</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Esperando Adobe-Apollo</title>
+		<link>/2006/10/28/esperando-adobe-apollo/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Sat, 28 Oct 2006 17:18:06 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<guid isPermaLink="false">/qlog/?p=18</guid>
+
+					<description><![CDATA[<p>Ayer un amigo ten&#237;a en su nick algo as&#237; como -probando adobe-apollo- yo inmediatamente me puse a buscar un link de descarga de alguna versi&#243;n beta de esta aplicaci&#243;n tan esperada de adobe. No encontr&#233; nada, mi amigo se hab&#237;a equivocado, estaba probando otra cosilla que se encontr&#243; en adobe labs. Espero con ansia la [&#8230;]</p>
+<p>The post <a href="/2006/10/28/esperando-adobe-apollo/" target="_blank">Esperando Adobe-Apollo</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Konfabulator y Dashboard</title>
+		<link>/2006/10/24/konfabulator-y-dashboard/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 24 Oct 2006 19:30:03 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<guid isPermaLink="false">/qlog/?p=16</guid>
+
+					<description><![CDATA[<p>Recientemente he estado desarrollando un widget para una institución bancaria reconocida. El desarrollo del proyecto lo pidieron para mac y para pc, por lo cual se utilizaron 2 motores distintos: Konfabulator y Dashboard. Konfabulator es de yahoo y estuvo mucho tiempo en el mercado como lider de estas tecnologías, funiciona tanto para pc como para [&#8230;]</p>
+<p>The post <a href="/2006/10/24/konfabulator-y-dashboard/" target="_blank">Konfabulator y Dashboard</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+	                                          </channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ATL &#8211; Quantium</title>
+	<atom:link href="/tag/atl/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Thu, 24 Jan 2013 20:12:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Para el publicista clásico que empieza en digital (There and Back Again)</title>
+		<link>/2013/01/23/publicista-digital/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Thu, 24 Jan 2013 01:08:43 +0000</pubDate>
+				<category><![CDATA[Publicidad]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[agencia]]></category>
+		<category><![CDATA[agencias]]></category>
+		<category><![CDATA[ATL]]></category>
+		<category><![CDATA[BTL]]></category>
+		<category><![CDATA[digital]]></category>
+		<category><![CDATA[FTL]]></category>
+		<category><![CDATA[marketing]]></category>
+		<category><![CDATA[Marketing Digital]]></category>
+		<category><![CDATA[programador]]></category>
+		<category><![CDATA[pubicista]]></category>
+		<category><![CDATA[publicidad]]></category>
+		<guid isPermaLink="false">/?p=358</guid>
+
+					<description><![CDATA[<p>Comentarios acerca de los publicistas que vienen de la vieja escuela y se acercan al mundo digital</p>
+<p>The post <a href="/2013/01/23/publicista-digital/" target="_blank">Para el publicista clásico que empieza en digital (There and Back Again)</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+	                                          </channel>
+</rss>

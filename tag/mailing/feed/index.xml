@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mailing &#8211; Quantium</title>
+	<atom:link href="/tag/mailing/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Sat, 06 Sep 2014 17:39:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Un nuevo paradigma del marketing para el correo electrónico</title>
+		<link>/2011/01/12/un-nuevo-paradigma-del-marketing-para-el-correo-electronico-2/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Thu, 13 Jan 2011 02:50:25 +0000</pubDate>
+				<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[Publicidad]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[email marketing]]></category>
+		<category><![CDATA[mailing]]></category>
+		<category><![CDATA[spam]]></category>
+		<guid isPermaLink="false">http://blog.isotopo.net/?p=191</guid>
+
+					<description><![CDATA[<p>Los tiempos han cambiado, hemos ido de los viejos chats en html con varias salas a las redes sociales a la telefonía movil. Hemos pasado por los grandes portales que absorbían toda nuestra atención porque tenían todo el contenído que podía interesarnos encontrar en internet, la guerra de los mensajeros instantaneos, las cúspides y caidas [&#8230;]</p>
+<p>The post <a href="/2011/01/12/un-nuevo-paradigma-del-marketing-para-el-correo-electronico-2/" target="_blank">Un nuevo paradigma del marketing para el correo electrónico</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+	                                          </channel>
+</rss>

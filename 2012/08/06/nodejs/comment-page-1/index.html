@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US"
+	prefix="og: https://ogp.me/ns#" >
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US"
+	prefix="og: https://ogp.me/ns#" >
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: https://ogp.me/ns#" class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="pingback" href="/xmlrpc.php" />
+
+<!--[if lt IE 9]>
+    <script src="/wp-content/themes/customizr/assets/front/js/libs/html5.js"></script>
+  <![endif]-->
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Como funciona Node.js | Quantium</title>
+
+<meta name="description" content="Como funciona node.js y como crear un servidor que escuche el puerto 8080" />
+<meta name="keywords" content="nodejs,node,javascript,socketio,node.js,socket.io,async,comet,google,npm.js,serverside,socket.is,desarrollo,programación,ubuntu" />
+<script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"/#organization","url":"/","name":"Quantium","sameAs":[]},{"@type":"WebSite","@id":"/#website","url":"/","name":"Quantium","publisher":{"@id":"/#organization"},"potentialAction":{"@type":"SearchAction","target":"/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"/2012/08/06/nodejs/comment-page-1/#comments#webpage","url":"/2012/08/06/nodejs/comment-page-1/#comments","inLanguage":"en-US","name":"Como funciona Node.js","isPartOf":{"@id":"/#website"},"breadcrumb":{"@id":"/2012/08/06/nodejs/comment-page-1/#comments#breadcrumblist"},"description":"Como funciona node.js y como crear un servidor que escuche el puerto 8080","datePublished":"2012-08-06T22:03:22-05:00","dateModified":"2014-02-26T22:13:08-06:00"},{"@type":"Article","@id":"/2012/08/06/nodejs/comment-page-1/#comments#article","isPartOf":{"@id":"/2012/08/06/nodejs/comment-page-1/#comments#webpage"},"author":{"@id":"/author/admin/#author"},"headline":"Como funciona Node.js","datePublished":"2012-08-06T22:03:22-05:00","dateModified":"2014-02-26T22:13:08-06:00","commentCount":1,"mainEntityOfPage":{"@id":"/2012/08/06/nodejs/comment-page-1/#comments#webpage"},"publisher":{"@id":"/#organization"},"articleSection":"Desarrollo, javascript, node.js, Programación, Ubuntu, comet, google, javascript, node.js, npm.js, serverside, socket.is","image":{"@type":"ImageObject","@id":"/2012/08/06/nodejs/comment-page-1/#comments#primaryimage","url":"http://code.google.com/p/v8/logo?cct=1338820848"}},{"@type":"Person","@id":"/author/admin/#author","name":"Andrés González Aragón","sameAs":["https://www.twitter.com/Quantium"],"image":{"@type":"ImageObject","@id":"/#personlogo","url":"http://1.gravatar.com/avatar/a778e0351a47e69929a12835b2af0ce1?s=96&d=mm&r=pg","width":96,"height":96,"caption":"Andrés González Aragón"}},{"@type":"BreadcrumbList","@id":"/2012/08/06/nodejs/comment-page-1/#comments#breadcrumblist","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"/","url":"/","name":"Quantium Blog"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"/2012/08/06/nodejs/comment-page-1/#comments","url":"/2012/08/06/nodejs/comment-page-1/#comments","name":"Como funciona Node.js"}}]}]}</script>
+<link rel="canonical" href="/2012/08/06/nodejs/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Como funciona Node.js | Quantium" />
+<meta property="og:description" content="Como funciona node.js y como crear un servidor que escuche el puerto 8080" />
+<meta property="og:url" content="/2012/08/06/nodejs/" />
+<meta property="og:site_name" content="Quantium&#039;s Blog" />
+<meta property="og:image" content="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c64.0.320.320/p320x320/10629821_10152672841702174_2354202117164991474_n.jpg?oh=87e738e804d0bd8352cfb85f68087a3c&#038;oe=5467999F&#038;__gda__=1415327360_3fe763d4fe4d2545f0462a35f89b7d96" />
+<meta property="fb:admins" content="694520120" />
+<meta property="article:published_time" content="2012-08-06T22:03:22Z" />
+<meta property="article:modified_time" content="2014-02-26T22:13:08Z" />
+<meta property="article:publisher" content="https://www.facebook.com/quantium" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Quantium" />
+<meta name="twitter:creator" content="@Quantium" />
+<meta name="twitter:domain" content="quantium.com.mx" />
+<meta name="twitter:title" content="Como funciona Node.js | Quantium" />
+<meta name="twitter:description" content="Como funciona node.js y como crear un servidor que escuche el puerto 8080" />
+<meta name="twitter:image" content="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c64.0.320.320/p320x320/10629821_10152672841702174_2354202117164991474_n.jpg?oh=87e738e804d0bd8352cfb85f68087a3c&#038;oe=5467999F&#038;__gda__=1415327360_3fe763d4fe4d2545f0462a35f89b7d96" />
+<script type="text/javascript">
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-639959-2', 'auto');
+				// Plugins
+				
+				ga('send', 'pageview');
+			</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+<link rel='dns-prefetch' href='' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Quantium &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Quantium &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Quantium &raquo; Como funciona Node.js Comments Feed" href="/2012/08/06/nodejs/feed/" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='customizr-main-css' href='/wp-content/themes/customizr/assets/front/css/style.min.css?ver=4.3.3' type='text/css' media='all' />
+<style id='customizr-main-inline-css' type='text/css'>
+
+.tc-header.border-top { border-top-width: 5px; border-top-style: solid }
+.tc-singular-thumbnail-wrapper .entry-media__wrapper {
+                max-height: 200px;
+                height :200px
+              }
+
+@media (min-width: 576px ){
+.tc-singular-thumbnail-wrapper .entry-media__wrapper {
+                  max-height: 250px;
+                  height :250px
+                }
+}
+
+#czr-push-footer { display: none; visibility: hidden; }
+        .czr-sticky-footer #czr-push-footer.sticky-footer-enabled { display: block; }
+        
+</style>
+<link rel='stylesheet' id='customizr-ms-respond-css' href='/wp-content/themes/customizr/assets/front/css/style-modular-scale.min.css?ver=4.3.3' type='text/css' media='all' />
+<script type='text/javascript' id="nb-jquery" src='/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='/wp-content/themes/customizr/assets/front/js/libs/modernizr.min.js?ver=4.3.3' id='modernizr-js'></script>
+<script type='text/javascript' src='/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' id='tc-scripts-js-extra'>
+/* <![CDATA[ */
+var CZRParams = {"assetsPath":"\/wp-content\/themes\/customizr\/assets\/front\/","mainScriptUrl":"\/wp-content\/themes\/customizr\/assets\/front\/js\/tc-scripts.min.js?4.3.3","deferFontAwesome":"1","fontAwesomeUrl":"\/wp-content\/themes\/customizr\/assets\/shared\/fonts\/fa\/css\/fontawesome-all.min.css?4.3.3","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"adminAjaxUrl":"\/wp-admin\/admin-ajax.php","ajaxUrl":"\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"183a1938eb"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Permanently dismiss"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}},"preloadGfonts":"1","googleFonts":"Source+Sans+Pro"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/themes/customizr/assets/front/js/tc-scripts.min.js?ver=4.3.3' id='tc-scripts-js' defer></script>
+<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/320" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" />
+<link rel='prev' title='Ahora que flash murió.' href='/2011/11/14/ahora-que-flash-murio/' />
+<link rel='next' title='Para el publicista clásico que empieza en digital (There and Back Again)' href='/2013/01/23/publicista-digital/' />
+<meta name="generator" content="WordPress 5.5.1" />
+<link rel='shortlink' href='/?p=320' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2012%2F08%2F06%2Fnodejs%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2012%2F08%2F06%2Fnodejs%2F&#038;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body class="post-template-default single single-post postid-320 single-format-standard wp-embed-responsive sek-hide-rc-badge czr-link-hover-underline header-skin-light footer-skin-dark czr-l-sidebar tc-center-images czr-full-layout czr-sticky-footer">
+<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+<div id="tc-page-wrap" class="">
+<header class="tpnav-header__header tc-header sl-logo_left sticky-brand-shrink-on sticky-transparent border-top czr-submenu-fade czr-submenu-move">
+<div class="topbar-navbar__wrapper">
+<div class="container">
+<div class="row flex-row flex-lg-nowrap justify-content-start justify-content-lg-end align-items-center topbar-navbar__row">
+<div class="topbar-nav__socials social-links col col-auto">
+<ul class="socials">
+<li><a rel="nofollow noopener noreferrer" class="social-icon icon-feed" title="Subscribe to my rss feed" aria-label="Subscribe to my rss feed" href="/feed/rss/" target="_blank" style="font-size:12px"><i class="fas fa-rss"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-expeditedssl" title="Download Brave Browser" aria-label="Download Brave Browser" href="https://brave.com/qua433" target="_blank" style="color:#f32020;font-size:12px"><i class="fab fa-expeditedssl"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-spotify" title="Follow us on Spotify" aria-label="Follow us on Spotify" href="https://open.spotify.com/user/quantium-mx?si=3znnUidiSA2A9EEx8PFnGw" target="_blank" style="color:#8aef42;font-size:12px"><i class="fab fa-spotify"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-angellist" title="Follow me on Angellist" aria-label="Follow me on Angellist" href="https://angel.co/andres-gonzalez-aragon" target="_blank" style="color:#a667e9;font-size:12px"><i class="fab fa-angellist"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-linkedin" title="Follow us on Linkedin" aria-label="Follow us on Linkedin" href="https://www.linkedin.com/in/quantium/" target="_blank" style="color:#2749e1;font-size:12px"><i class="fab fa-linkedin"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-twitter" title="Follow us on Twitter" aria-label="Follow us on Twitter" href="https://twitter.com/Quantium" target="_blank" style="color:#8464dd;font-size:12px"><i class="fab fa-twitter"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-github" title="Follow us on Github" aria-label="Follow us on Github" href="https://github.com/Quantium" target="_blank" style="font-size:12px"><i class="fab fa-github"></i></a></li></ul>
+</div>
+<div class="topbar-nav__utils nav__utils col-auto d-none d-lg-flex">
+<ul class="nav utils flex-row flex-nowrap regular-nav">
+<li class="nav__search">
+<a href="#" class="search-toggle_btn icn-search czr-overlay-toggle_btn" aria-expanded="false"><span class="sr-only">Search</span></a>
+<div class="czr-search-expand">
+<div class="czr-search-expand-inner"><div class="search-form__container">
+<form action="/" method="get" class="czr-form search-form">
+<div class="form-group czr-focus">
+<label for="s-5f8e06667b505" id="lsearch-5f8e06667b505">
+<span class="screen-reader-text">Search</span>
+<input id="s-5f8e06667b505" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-5f8e06667b505" placeholder="Search &hellip;">
+</label>
+<button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Search &hellip;</span></button>
+</div>
+</form>
+</div></div>
+</div>
+</li>
+</ul>
+</div> </div>
+</div>
+</div> <div class="primary-navbar__wrapper d-none d-lg-block has-horizontal-menu has-branding-aside desktop-sticky">
+<div class="container">
+<div class="row align-items-center flex-row primary-navbar__row">
+<div class="branding__container col col-auto">
+<div class="branding align-items-center flex-column">
+<div class="branding-row d-flex align-self-start flex-row align-items-center">
+<span class="navbar-brand col-auto">
+<a class="navbar-brand-sitename" href="/">
+<span>Quantium</span>
+</a>
+</span>
+<div class="branding-aside col-auto flex-column d-flex">
+<span class="header-tagline">
+Andrés Gónzález Aragón | Technolgy and more</span>
+</div>
+</div>
+</div>
+</div>
+<div class="primary-nav__container justify-content-lg-around col col-lg-auto flex-lg-column">
+<div class="primary-nav__wrapper flex-lg-row align-items-center justify-content-end">
+<nav class="primary-nav__nav col" id="primary-nav">
+<div class="nav__menu-wrapper primary-nav__menu-wrapper justify-content-end czr-open-on-hover">
+<ul id="main-menu" class="primary-nav__menu regular-nav nav__menu nav"><li id="menu-item-479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="/andres-gonzalez-aragon/" class="nav__link"><span class="nav__title">Who am I?</span></a></li>
+<li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-478"><a href="/about/" class="nav__link"><span class="nav__title">About this blog</span></a></li>
+</ul></div> </nav>
+</div>
+</div>
+</div>
+</div>
+</div> <div class="mobile-navbar__wrapper d-lg-none mobile-sticky">
+<div class="branding__container justify-content-between align-items-center container">
+<div class="branding flex-column">
+<div class="branding-row d-flex align-self-start flex-row align-items-center">
+<span class="navbar-brand col-auto">
+<a class="navbar-brand-sitename" href="/">
+<span>Quantium</span>
+</a>
+</span>
+</div>
+</div>
+<div class="mobile-utils__wrapper nav__utils regular-nav">
+<ul class="nav utils row flex-row flex-nowrap">
+<li class="nav__search">
+<a href="#" class="search-toggle_btn icn-search czr-dropdown" data-aria-haspopup="true" aria-expanded="false"><span class="sr-only">Search</span></a>
+<div class="czr-search-expand">
+<div class="czr-search-expand-inner"><div class="search-form__container">
+<form action="/" method="get" class="czr-form search-form">
+<div class="form-group czr-focus">
+<label for="s-5f8e06667d749" id="lsearch-5f8e06667d749">
+<span class="screen-reader-text">Search</span>
+<input id="s-5f8e06667d749" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-5f8e06667d749" placeholder="Search &hellip;">
+</label>
+<button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Search &hellip;</span></button>
+</div>
+</form>
+</div></div>
+</div>
+<ul class="dropdown-menu czr-dropdown-menu">
+<li class="header-search__container container">
+<div class="search-form__container">
+<form action="/" method="get" class="czr-form search-form">
+<div class="form-group czr-focus">
+<label for="s-5f8e06667d95e" id="lsearch-5f8e06667d95e">
+<span class="screen-reader-text">Search</span>
+<input id="s-5f8e06667d95e" class="form-control czr-search-field" name="s" type="search" value="" aria-describedby="lsearch-5f8e06667d95e" placeholder="Search &hellip;">
+</label>
+<button type="submit" class="button"><i class="icn-search"></i><span class="screen-reader-text">Search &hellip;</span></button>
+</div>
+</form>
+</div></li> </ul>
+</li>
+<li class="hamburger-toggler__container">
+<button class="ham-toggler-menu czr-collapsed" data-toggle="czr-collapse" data-target="#mobile-nav"><span class="ham__toggler-span-wrapper"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span><span class="screen-reader-text">Menu</span></button>
+</li>
+</ul>
+</div>
+</div>
+<div class="mobile-nav__container">
+<nav class="mobile-nav__nav flex-column czr-collapse" id="mobile-nav">
+<div class="mobile-nav__inner container">
+<div class="nav__menu-wrapper mobile-nav__menu-wrapper czr-open-on-click">
+<ul id="mobile-nav-menu" class="mobile-nav__menu vertical-nav nav__menu flex-column nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="/andres-gonzalez-aragon/" class="nav__link"><span class="nav__title">Who am I?</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-478"><a href="/about/" class="nav__link"><span class="nav__title">About this blog</span></a></li>
+</ul></div> </div>
+</nav>
+</div></div></header>
+<div id="main-wrapper" class="section">
+<div class="czr-hot-crumble container page-breadcrumbs" role="navigation">
+<div class="row">
+<nav class="breadcrumbs col-12"><span class="trail-begin"><a href="/" title="Quantium" rel="home" class="trail-begin">Home</a></span> <span class="sep">&raquo;</span> <a href="/category/q/" title="Quantium">Quantium</a> <span class="sep">&raquo;</span> <a href="/category/q/desarrollo/" title="Desarrollo">Desarrollo</a> <span class="sep">&raquo;</span> <span class="trail-end">Como funciona Node.js</span></nav> </div>
+</div>
+<div class="container" role="main">
+<div class="flex-row row column-content-wrapper">
+<div id="content" class="col-12 col-md-9 article-container">
+<article id="post-320" class="post-320 post type-post status-publish format-standard category-desarrollo category-javascript category-node-js category-programacion category-ubuntu tag-comet tag-google tag-javascript tag-node-js tag-npm-js tag-serverside tag-socket-is czr-hentry">
+<header class="entry-header">
+<div class="entry-header-inner">
+<div class="tax__container post-info entry-meta">
+<a class="tax__link" href="/category/q/desarrollo/" title="View all posts in Desarrollo"> <span>Desarrollo</span> </a><a class="tax__link" href="/category/q/desarrollo/javascript/" title="View all posts in javascript"> <span>javascript</span> </a><a class="tax__link" href="/category/q/desarrollo/javascript/node-js/" title="View all posts in node.js"> <span>node.js</span> </a><a class="tax__link" href="/category/programacion/" title="View all posts in Programación"> <span>Programación</span> </a><a class="tax__link" href="/category/ubuntu/" title="View all posts in Ubuntu"> <span>Ubuntu</span> </a> </div>
+<h1 class="entry-title">Como funciona Node.js</h1>
+<div class="header-bottom">
+<div class="post-info">
+<span class="entry-meta">
+<span class="author-meta">by <span class="author vcard"><span class="author_name"><a class="url fn n" href="/author/admin/" title="View all posts by Andrés González Aragón" rel="author">Andrés González Aragón</a></span></span></span><span class="v-separator">|</span>Published <a href="/2012/08/06/" title="5:03 pm" rel="bookmark"><time class="entry-date published updated" datetime="06/08/2012">06/08/2012</time></a><span class="v-separator">|</span></span><a class="comments__link" data-anchor-scroll="true" href="#czr-comments" title="1 Comment on Como funciona Node.js"><span>1 comment</span></a> </div>
+</div>
+</div>
+</header> <div class="post-entry tc-content-inner">
+<section class="post-content entry-content">
+<div class="czr-wp-the-content">
+ <p style="text-align: center;"><a href="https://d2phkobe5kpduw.cloudfront.net/wp-content/uploads/2012/08/nodejs-1024x768.png" data-lb-type="grouped-post"><img loading="lazy" class="aligncenter  wp-image-436" alt="NodeJS" src="https://d2phkobe5kpduw.cloudfront.net/wp-content/uploads/2012/08/nodejs-1024x768.png" width="614" height="461" /></a></p>
+<p><a title="node.js" href="https://nodejs.org/" target="_blank">Node.js</a>, en resumidas cuentas, es una plataforma para utilizar <a href="https://en.wikipedia.org/wiki/Javascript" target="_blank">javascript</a> del lado del servidor, se podría decir, aunque no de manera muy exacta, que hace las veces de php, asp o jsp.</p>
+<p><span id="more-320"></span></p>
+<p><a title="Fuente Wikipedia" href="https://en.wikipedia.org/wiki/File:Scheme_dynamic_page_en.svg" data-lb-type="grouped-post" target="_blank"><img loading="lazy" class="alignnone" title="Server side" alt="tomado de Wikipedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Scheme_dynamic_page_en.svg/800px-Scheme_dynamic_page_en.svg.png" width="628" height="204" /></a></p>
+<p>Y digo que no de manera muy exacta porque cada lenguaje tiene sus restricciones, por ejemplo <a title="php" href="http://www.php.net/" target="_blank">php</a> está planeado para ser un script interpretable que depende de un servidor web como <a title="Apache" href="https://httpd.apache.org/" target="_blank">apache</a> o <a title="IIS" href="http://www.iis.net/" target="_blank">iis</a>. Node hace las veces de un código y de un servidor web, pudiéndose correr sin depender de uno u otro.</p>
+<p><img loading="lazy" title="Google V8" alt="V8 googles javascript engine " src="https://code.google.com/p/v8/logo?cct=1338820848" width="63" height="55" />Node utiliza la <a title="Google V8" href="https://code.google.com/p/v8/" target="_blank">máquina virtual de javascript de google conocida como v8</a> para interpretar el código javascript. La segunda característica más notable es que puede levantar servidores web en casi cualquier puerto que se le indique y generar llamadas tipo <a title="comet" href="https://es.wikipedia.org/wiki/Comet" target="_blank">comet</a>, osea que son conexiones persistentes que se comportan como sockets y que hacen posible la comunicación única bidirideccional entre el cliente y el servidor.</p>
+<p>Para poner esto más claro, en php, por ejemplo, llamamos un archivo .php y, después de un procesamiento en el servidor, obtenemos un archivo de texto, una imagen o cualquier otro tipo de archivo, dependiendo de como esté programado; pero siempre, siempre, al final del archivo un <a title="End Of File" href="https://es.wikipedia.org/wiki/EOF">EOF</a> o Fin De Archivo (Por sus siglas en inglés) que nos indica que la conexión se cerró. (PHP también es capaz de generar <a title="PHP Sockets" href="https://php.net/manual/en/book.sockets.php" target="_blank">conexiones persistentes</a> con <a title="otras técnicas" href="http://jsjoy.com/blog/197/simple-php-comet-example?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=simple-php-comet-example" target="_blank">diferentes técnicas</a> aunque inicialmente no fue planeado para ello), si se quieren obtener más datos del servidor hay que hacer otra petición, el servidor no puede <em>simplemente enviar</em> los datos al cliente.</p>
+<p>Mientras que una conexión tipo <a title="comet" href="https://es.wikipedia.org/wiki/Comet" target="_blank">comet</a> o persistente no envía el <a title="End Of File" href="https://es.wikipedia.org/wiki/EOF">EOF</a> y eso hace que la conexión no se cierre y el servidor pueda enviar de manera <a title="Transmisión asíncrona" href="https://es.wikipedia.org/wiki/Transmisi%C3%B3n_as%C3%ADncrona" target="_blank">asíncrona</a> al cliente los datos que sean necesarios. Esto nos sirve para hacer juegos, chats y push de bigdata en clientes web sin tener que refrescar el sitio y de manera fluida, aunque utiliza mucho ancho de banda y las demás aplicaciones que corran junto a la nuestra pueden verse afectadas.</p>
+<h2>Ventajas</h2>
+<ul>
+<li>Se programa en javascript así que la curva de aprendizaje es mínima</li>
+<li>Levantar un servidor es muy facil</li>
+<li>Tiene un api sencillo de aprender y no muy grande</li>
+<li>Tiene <a title="npm.js" href="https://npmjs.org/" target="_blank">su propio repositorio de módulos</a> y es sencillo de utilizar</li>
+<li>No crea un hilo por conexión y duerme mientras no se utiliza</li>
+<li>Tiene un intérprete en línea de comandos</li>
+</ul>
+<p>No hablaré de las desventajas ya que estos temas tienen a ser muy polémicos, pero sí diré que está en su versión 0.8.5 lo cual nos indica que sigue en beta, aunque bastante robusto la mayoría, hay ciertas cosas que aún falta probar.</p>
+<h2>Como se usa</h2>
+<p>Para crear un servidor a la escucha sólo escribimos un archivo llamado hola_edmundo.js</p>
+<pre> var http = require('http');
+var server = http.createServer(function(request,response)
+{
+response.writeHead(200);
+response.end('Hola Edmundo,  Como están los niños?');
+//2 de mis primos se llaman Edmundo y niguno tiene hijos
+console.log("Request url :: " + request.url);
+});
+server.listen(8080);
+</pre>
+<p><strong>Para correrlo</strong> basta ejecutar el comando node hola_edmundo.js</p>
+<p><strong>En la línea 1</strong> estamos utilizando <em>require</em>, require es una función de node para importar módulos, todo en node se basa en módulos; a mi parecer es una manera elegante y limpia de resolver la carencia de <a title="Object Oriented Programming" href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank">OOP</a> en javascript, En esta línea estamos importando el módulo http que nos permite crear servidores del tipo que su nombre indica.</p>
+<p><strong>En la línea 2</strong> estamos utilizando la función <em>createServer</em> que acepta una función como parámetro opcional a modo de <em>listener</em> a la escucha el un evento; como en todo en <em>javascript</em> si no pasamos esta función como parámetro se detendrá la ejecución del código posterior hasta que no se haya terminado de crear el servidor. Esta función recibe 2 parámetros, uno es el <em>request</em> o petición y el otro el <em>response</em> o respuesta.</p>
+<p><strong>En la línea 4</strong> le estoy diciendo que escriba la cabecera con sólo la opción de la respuesa <em>200</em>, osea <em>todo bien</em>.</p>
+<p><strong>En la línea 5</strong> utilizo la función end para indicar como va a terminar el programa, en este caso digo que escriba una frase muy ingeniosa que se me ocurrió mientras escribía este post. Esto es lo que se va a ver en el navegador.</p>
+<p><strong>En la línea 7</strong> utilizo el la función <em>log</em> del objeto <em>console</em> que no funciona igual que su homónimo del lado del cliente, aunque parecido, al ejecutar esta línea y pasarle como parámetro <em>request.url</em> puedo ver que en cuanto alguien (o algo) hace una petición me mostrará el string url almacenado en el objeto request. El <em>request</em> es lo que el cliente está enviando al hacer la petición, por ejemplo, si mi código está corriendo en localhost y yo pido http://localhost:8080/chido_punketo_y_a_gogo al mostrar el url en mi terminal se mostrara lo siguiente:</p>
+<pre> /chido_punketo_y_a_gogo
+</pre>
+<p>O el url que esté yo siguiendo, esta es una muestra de que podemos hacer la petición que nuestro archivo js no está funcionando igual que un php que a cada petición es llamado e interpreta lo enviado y devuelve algo desado, es más bien como apache que se pone a la escucha y recibe todas las peticiones.</p>
+<p>Pensándo un poco podemos deducir que importando más módulos podemos hacer todo un árbol de decisiones basados en la petición del usuario, o bien un socket para crear un chat.</p>
+<p>Y finalmente <strong>en la línea 9</strong> inicializo el servidor para que escuche el puerto 8080.</p>
+<p>Pueden encontrar el código de este pequeño ejemplo en mi <a title="Código en el github" href="https://github.com/Quantium/lab/blob/master/hello_http.js" target="_blank">github</a></p>
+<p>En los próximos posts seguiré escribiendo acerca de Node.js espero pronto poner un tutorial de instalación y uso y algunos ejemplos prácticos.</p>
+<p>Haré todo lo posible por narrar mi próximo post como <a title="Bob Ross" href="http://www.bobross.com/" target="_blank">Bob Ross</a></p>
+</div>
+<footer class="post-footer clearfix">
+<div class="row entry-meta justify-content-between align-items-center">
+<div class="post-tags col-xs-12 col-sm-auto col-sm">
+<ul class="tags"> 
+<li><a class="tag__link btn btn-skin-dark-oh inverted" href="/tag/comet/" title="View all posts in comet"> <span>comet</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="/tag/google/" title="View all posts in google"> <span>google</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="/tag/javascript/" title="View all posts in javascript"> <span>javascript</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="/tag/node-js/" title="View all posts in node.js"> <span>node.js</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="/tag/npm-js/" title="View all posts in npm.js"> <span>npm.js</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="/tag/serverside/" title="View all posts in serverside"> <span>serverside</span> </a></li><li><a class="tag__link btn btn-skin-dark-oh inverted" href="/tag/socket-is/" title="View all posts in socket.is"> <span>socket.is</span> </a></li> </ul>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</article> <section class="post-related-articles czr-carousel" id="related-posts-section">
+<header class="row flex-row">
+<h3 class="related-posts_title col">You may also like</h3>
+<div class="related-posts_nav col col-auto">
+<span class="btn btn-skin-dark inverted czr-carousel-prev slider-control czr-carousel-control disabled icn-left-open-big" title="Previous related articles" tabindex="0"></span>
+<span class="btn btn-skin-dark inverted czr-carousel-next slider-control czr-carousel-control icn-right-open-big" title="Next related articles" tabindex="0"></span>
+</div>
+</header>
+<div class="row grid-container__square-mini carousel-inner">
+<article id="post-57_related_posts" class="col-6 grid-item czr-related-post post-57 post type-post status-publish format-standard category-desarrollo category-q czr-hentry">
+<div class="grid__item flex-wrap flex-lg-nowrap flex-row">
+<section class="tc-thumbnail entry-media__holder col-12 col-lg-6 czr__r-w1by1">
+<div class="entry-media__wrapper czr__r-i js-centering">
+<a class="bg-link" rel="bookmark" href="/2007/05/04/similitud-silverlight-flash-funny/"></a>
+<svg class="czr-svg-placeholder thumb-standard-empty" id="5f8e066686dfa" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M928 832q0-14-9-23t-23-9q-66 0-113 47t-47 113q0 14 9 23t23 9 23-9 9-23q0-40 28-68t68-28q14 0 23-9t9-23zm224 130q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-1024 574h1536v-128h-1536v128zm1152-574q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm-1024-642h384v-128h-384v128zm-128 192h1536v-256h-828l-64 128h-644v128zm1664-256v1280q0 53-37.5 90.5t-90.5 37.5h-1536q-53 0-90.5-37.5t-37.5-90.5v-1280q0-53 37.5-90.5t90.5-37.5h1536q53 0 90.5 37.5t37.5 90.5z" /></svg>
+<img class="czr-img-placeholder" src="/wp-content/themes/customizr/assets/front/img/thumb-standard-empty.png" alt="Similitud Silverlight-Flash (funny)" data-czr-post-id="5f8e066686dfa" width="300" height="300" /> </div>
+</section> <section class="tc-content entry-content__holder col-12 col-lg-6 czr__r-w1by1">
+<div class="entry-content__wrapper">
+<header class="entry-header">
+<div class="entry-header-inner">
+<div class="entry-meta post-info">
+Published <a href="/2007/05/04/similitud-silverlight-flash-funny/" title="Permalink to:&nbsp;Similitud Silverlight-Flash (funny)" rel="bookmark"><time class="entry-date published updated" datetime="04/05/2007">04/05/2007</time></a> </div>
+<h2 class="entry-title">
+<a class="czr-title" href="/2007/05/04/similitud-silverlight-flash-funny/" rel="bookmark">Similitud Silverlight-Flash (funny)</a>
+</h2>
+<div class="post-info"><a class="comments__link" data-anchor-scroll="true" href="/2007/05/04/similitud-silverlight-flash-funny/#czr-comments" title="1 Comment on Similitud Silverlight-Flash (funny)"><span>1 comment</span></a></div> </div>
+</header><div class="tc-content-inner entry-summary">
+<div class="czr-wp-the-content">
+<p>Este es un screenshot de lo que me pasó navegando por este ejemplo de silverlight: http://silverlight.net/samples/1.0/Ink-Tattoo-Studio/default.html</p>
+</div>
+</div> </div>
+</section>
+</div>
+</article><article id="post-88_related_posts" class="col-6 grid-item czr-related-post post-88 post type-post status-publish format-standard category-desarrollo category-q czr-hentry">
+<div class="grid__item flex-wrap flex-lg-nowrap flex-row">
+<section class="tc-thumbnail entry-media__holder col-12 col-lg-6 czr__r-w1by1">
+<div class="entry-media__wrapper czr__r-i js-centering">
+<a class="bg-link" rel="bookmark" href="/2007/07/27/grave-vulnerabilidad-en-archivos-flv/"></a>
+<svg class="czr-svg-placeholder thumb-standard-empty" id="5f8e066689299" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M928 832q0-14-9-23t-23-9q-66 0-113 47t-47 113q0 14 9 23t23 9 23-9 9-23q0-40 28-68t68-28q14 0 23-9t9-23zm224 130q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-1024 574h1536v-128h-1536v128zm1152-574q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm-1024-642h384v-128h-384v128zm-128 192h1536v-256h-828l-64 128h-644v128zm1664-256v1280q0 53-37.5 90.5t-90.5 37.5h-1536q-53 0-90.5-37.5t-37.5-90.5v-1280q0-53 37.5-90.5t90.5-37.5h1536q53 0 90.5 37.5t37.5 90.5z" /></svg>
+<img class="czr-img-placeholder" src="/wp-content/themes/customizr/assets/front/img/thumb-standard-empty.png" alt="Grave vulnerabilidad en archivos flv" data-czr-post-id="5f8e066689299" width="300" height="300" /> </div>
+</section> <section class="tc-content entry-content__holder col-12 col-lg-6 czr__r-w1by1">
+<div class="entry-content__wrapper">
+<header class="entry-header">
+<div class="entry-header-inner">
+<div class="entry-meta post-info">
+Published <a href="/2007/07/27/grave-vulnerabilidad-en-archivos-flv/" title="Permalink to:&nbsp;Grave vulnerabilidad en archivos flv" rel="bookmark"><time class="entry-date published updated" datetime="27/07/2007">27/07/2007</time></a> </div>
+<h2 class="entry-title">
+<a class="czr-title" href="/2007/07/27/grave-vulnerabilidad-en-archivos-flv/" rel="bookmark">Grave vulnerabilidad en archivos flv</a>
+</h2>
+</div>
+</header><div class="tc-content-inner entry-summary">
+<div class="czr-wp-the-content">
+<p>Mind Security descubró una vulnerabilidad en el flash player de adobe, la cual se puede explotar modificando las cabeceras de cualquier archivo [&hellip;]</p>
+</div>
+</div> </div>
+</section>
+</div>
+</article><article id="post-48_related_posts" class="col-6 grid-item czr-related-post post-48 post type-post status-publish format-standard category-desarrollo category-flex category-q czr-hentry">
+<div class="grid__item flex-wrap flex-lg-nowrap flex-row">
+<section class="tc-thumbnail entry-media__holder col-12 col-lg-6 czr__r-w1by1">
+<div class="entry-media__wrapper czr__r-i js-centering">
+<a class="bg-link" rel="bookmark" href="/2007/03/23/qonsole-reborned/"></a>
+<svg class="czr-svg-placeholder thumb-standard-empty" id="5f8e06668ba96" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M928 832q0-14-9-23t-23-9q-66 0-113 47t-47 113q0 14 9 23t23 9 23-9 9-23q0-40 28-68t68-28q14 0 23-9t9-23zm224 130q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-1024 574h1536v-128h-1536v128zm1152-574q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm-1024-642h384v-128h-384v128zm-128 192h1536v-256h-828l-64 128h-644v128zm1664-256v1280q0 53-37.5 90.5t-90.5 37.5h-1536q-53 0-90.5-37.5t-37.5-90.5v-1280q0-53 37.5-90.5t90.5-37.5h1536q53 0 90.5 37.5t37.5 90.5z" /></svg>
+<img class="czr-img-placeholder" src="/wp-content/themes/customizr/assets/front/img/thumb-standard-empty.png" alt="Qonsole reborned" data-czr-post-id="5f8e06668ba96" width="300" height="300" /> </div>
+</section> <section class="tc-content entry-content__holder col-12 col-lg-6 czr__r-w1by1">
+<div class="entry-content__wrapper">
+<header class="entry-header">
+<div class="entry-header-inner">
+<div class="entry-meta post-info">
+Published <a href="/2007/03/23/qonsole-reborned/" title="Permalink to:&nbsp;Qonsole reborned" rel="bookmark"><time class="entry-date published updated" datetime="23/03/2007">23/03/2007</time></a> </div>
+<h2 class="entry-title">
+<a class="czr-title" href="/2007/03/23/qonsole-reborned/" rel="bookmark">Qonsole reborned</a>
+</h2>
+</div>
+</header><div class="tc-content-inner entry-summary">
+<div class="czr-wp-the-content">
+<p>Ha pasado mucho tiempo ya desde que Qonsole fué abandonado. Algunas de las razones fueron el tiempo, el trabajo y las limitantes [&hellip;]</p>
+</div>
+</div> </div>
+</section>
+</div>
+</article><article id="post-101_related_posts" class="col-6 grid-item czr-related-post post-101 post type-post status-publish format-standard category-desarrollo category-flex category-papervision3d category-q czr-hentry">
+<div class="grid__item flex-wrap flex-lg-nowrap flex-row">
+<section class="tc-thumbnail entry-media__holder col-12 col-lg-6 czr__r-w1by1">
+<div class="entry-media__wrapper czr__r-i js-centering">
+<a class="bg-link" rel="bookmark" href="/2007/10/01/taller-de-videojuegos-con-actionscript-en-el-cisc/"></a>
+<svg class="czr-svg-placeholder thumb-standard-empty" id="5f8e06668d94a" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M928 832q0-14-9-23t-23-9q-66 0-113 47t-47 113q0 14 9 23t23 9 23-9 9-23q0-40 28-68t68-28q14 0 23-9t9-23zm224 130q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-1024 574h1536v-128h-1536v128zm1152-574q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm-1024-642h384v-128h-384v128zm-128 192h1536v-256h-828l-64 128h-644v128zm1664-256v1280q0 53-37.5 90.5t-90.5 37.5h-1536q-53 0-90.5-37.5t-37.5-90.5v-1280q0-53 37.5-90.5t90.5-37.5h1536q53 0 90.5 37.5t37.5 90.5z" /></svg>
+<img class="czr-img-placeholder" src="/wp-content/themes/customizr/assets/front/img/thumb-standard-empty.png" alt="Taller de VideoJuegos con ActionScript en el CISC" data-czr-post-id="5f8e06668d94a" width="300" height="300" /> </div>
+</section> <section class="tc-content entry-content__holder col-12 col-lg-6 czr__r-w1by1">
+<div class="entry-content__wrapper">
+<header class="entry-header">
+<div class="entry-header-inner">
+<div class="entry-meta post-info">
+Published <a href="/2007/10/01/taller-de-videojuegos-con-actionscript-en-el-cisc/" title="Permalink to:&nbsp;Taller de VideoJuegos con ActionScript en el CISC" rel="bookmark"><time class="entry-date published updated" datetime="01/10/2007">01/10/2007</time></a> </div>
+<h2 class="entry-title">
+<a class="czr-title" href="/2007/10/01/taller-de-videojuegos-con-actionscript-en-el-cisc/" rel="bookmark">Taller de VideoJuegos con ActionScript en el CISC</a>
+</h2>
+</div>
+</header><div class="tc-content-inner entry-summary">
+<div class="czr-wp-the-content">
+<p>El 4 y el 5 de Octubre impartiré un taller en el Congreso Internacional de Sistemas Computacionales, esto será en el Tecnológico [&hellip;]</p>
+</div>
+</div> </div>
+</section>
+</div>
+</article> </div>
+</section>
+<div id="czr-comments" class="comments-area">
+<div id="comments" class="comments_container comments czr-comments-block">
+<section class="post-comments">
+<h2 id="czr-comments-title" class="comments-title">One thought on &ldquo;</span>Como funciona Node.js</span>&rdquo;</h2>
+<ul class="nav nav-pills tabs">
+
+<li class="nav-item"><a href="#commentlist-container" class="nav-link active" data-toggle="czr-pill" role="tab">1&nbspcomment</a></li>
+</ul>
+<div id="comments" class="tab-content">
+<div id="commentlist-container" class="tab-pane comments active" role="tabpanel">
+<ul class="comment-list">
+<li class="comment even thread-even depth-1" id="comment-39053">
+<div id="div-comment-39053" class="comment-section clearfix">
+<div class="col-avatar">
+<figure class="comment-avatar">
+<img alt='' src="https://1.gravatar.com/avatar/af595df01033613fe14bb8508e482a10?s=80&#038;d=mm&#038;r=pg" srcset='http://1.gravatar.com/avatar/af595df01033613fe14bb8508e482a10?s=160&#038;d=mm&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy' /> </figure>
+</div>
+<div class="comment-body" role="complementary">
+<header class="comment-meta">
+<div clas="comment-meta-top">
+<div class="comment-author vcard">
+pacosoul </div>
+<time class="comment-date comment-metadata" datetime="4:17 pm">
+<span>11/09/2012,</span>
+<a class="comment-time comment-link" href="/2012/08/06/nodejs/comment-page-1/#comment-39053">4:17 pm</a>
+</time>
+</div>
+</header>
+<div class="comment-content tc-content-inner"><p>Buena onda esta la de compartir los primeros pininos, &#8211; y sí- ya muchos le quieren apostar duro a NodeJS, en lo personal lo de la curva de aprendizaje me llama mucho la atención: tiempo tiempo tiempo.</p>
+<p>Una combinación explosiva con Mongo DB, lo que seguramente nos permitiré ver apps hecha en menos tiempo y con una viveza o dinamismo y conexión a otras APIs: tuiter, feisbu, google, etc.</p>
+<p>Seguiré pendiente y probando&#8230;</p>
+</div>
+</div>
+</div></li>
+</ul>
+</div>
+</div>
+<p class="nocomments">Comments are closed.</p>
+</section>
+</div> </div> </div>
+<div class="left sidebar tc-sidebar col-12 col-md-3 order-md-first">
+<div id="left" class="widget-area" role="complementary">
+ <aside id="categories-5" class="widget widget_categories"><h3 class="widget-title">Categories</h3>
+<ul>
+<li class="cat-item cat-item-85"><a href="/category/conferencias/">Conferencias</a> (1)
+</li>
+<li class="cat-item cat-item-94"><a href="/category/ignorancia/">Ignorancia</a> (1)
+</li>
+<li class="cat-item cat-item-127"><a href="/category/management/">Management</a> (2)
+</li>
+<li class="cat-item cat-item-76"><a href="/category/marketing-2/">Marketing</a> (7)
+</li>
+<li class="cat-item cat-item-79"><a href="/category/programacion/">Programación</a> (6)
+<ul class='children'>
+<li class="cat-item cat-item-120"><a href="/category/programacion/git/">Git</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-75"><a href="/category/publicidad-2/">Publicidad</a> (6)
+</li>
+<li class="cat-item cat-item-1"><a href="/category/q/">Quantium</a> (55)
+<ul class='children'>
+<li class="cat-item cat-item-7"><a href="/category/q/desarrollo/">Desarrollo</a> (25)
+<ul class='children'>
+<li class="cat-item cat-item-97"><a href="/category/q/desarrollo/javascript/">javascript</a> (1)
+<ul class='children'>
+<li class="cat-item cat-item-98"><a href="/category/q/desarrollo/javascript/node-js/">node.js</a> (1)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-61"><a href="/category/q/filosofia-personal/">filosofía</a> (2)
+</li>
+</ul>
+</li>
+<li class="cat-item cat-item-159"><a href="/category/scrum/">SCRUM</a> (1)
+</li>
+<li class="cat-item cat-item-135"><a href="/category/technology/">Technology</a> (5)
+</li>
+<li class="cat-item cat-item-44"><a href="/category/ubuntu/">Ubuntu</a> (2)
+</li>
+<li class="cat-item cat-item-25"><a href="/category//air/">AIR</a> (2)
+</li>
+<li class="cat-item cat-item-5"><a href="/category//flex/">Flex</a> (8)
+</li>
+<li class="cat-item cat-item-11"><a href="/category//papervision3d/">PaperVision3d</a> (5)
+</li>
+</ul>
+</aside><aside id="tag_cloud-8" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href="/tag/actionscript/" class="tag-cloud-link tag-link-58 btn btn-skin-dark-oh inverted tag-link-position-1" style="font-size: 1em;" aria-label="Actionscript (2 items)">Actionscript<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/adobeexpress/" class="tag-cloud-link tag-link-86 btn btn-skin-dark-oh inverted tag-link-position-2" style="font-size: 1em;" aria-label="AdobeExpress (1 item)">AdobeExpress<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/agile/" class="tag-cloud-link tag-link-130 btn btn-skin-dark-oh inverted tag-link-position-3" style="font-size: 1em;" aria-label="agile (1 item)">agile<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/backrub/" class="tag-cloud-link tag-link-144 btn btn-skin-dark-oh inverted tag-link-position-4" style="font-size: 1em;" aria-label="backrub (1 item)">backrub<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/big-data/" class="tag-cloud-link tag-link-148 btn btn-skin-dark-oh inverted tag-link-position-5" style="font-size: 1em;" aria-label="big data (2 items)">big data<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/charlataneria/" class="tag-cloud-link tag-link-56 btn btn-skin-dark-oh inverted tag-link-position-6" style="font-size: 1em;" aria-label="Charlatanería (2 items)">Charlatanería<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/charlatanes/" class="tag-cloud-link tag-link-55 btn btn-skin-dark-oh inverted tag-link-position-7" style="font-size: 1em;" aria-label="Charlatanes (2 items)">Charlatanes<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/charlatan/" class="tag-cloud-link tag-link-54 btn btn-skin-dark-oh inverted tag-link-position-8" style="font-size: 1em;" aria-label="Charlatán (2 items)">Charlatán<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/cuarto-camino/" class="tag-cloud-link tag-link-49 btn btn-skin-dark-oh inverted tag-link-position-9" style="font-size: 1em;" aria-label="Cuarto Camino (1 item)">Cuarto Camino<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/digital/" class="tag-cloud-link tag-link-106 btn btn-skin-dark-oh inverted tag-link-position-10" style="font-size: 1em;" aria-label="digital (2 items)">digital<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/digital-competence/" class="tag-cloud-link tag-link-136 btn btn-skin-dark-oh inverted tag-link-position-11" style="font-size: 1em;" aria-label="digital competence (1 item)">digital competence<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/digital-literacy/" class="tag-cloud-link tag-link-137 btn btn-skin-dark-oh inverted tag-link-position-12" style="font-size: 1em;" aria-label="digital literacy (1 item)">digital literacy<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/digital-transformation/" class="tag-cloud-link tag-link-138 btn btn-skin-dark-oh inverted tag-link-position-13" style="font-size: 1em;" aria-label="Digital transformation (2 items)">Digital transformation<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/digital-usage/" class="tag-cloud-link tag-link-139 btn btn-skin-dark-oh inverted tag-link-position-14" style="font-size: 1em;" aria-label="digital usage (1 item)">digital usage<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/documentales/" class="tag-cloud-link tag-link-66 btn btn-skin-dark-oh inverted tag-link-position-15" style="font-size: 1em;" aria-label="documentales (1 item)">documentales<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/email/" class="tag-cloud-link tag-link-71 btn btn-skin-dark-oh inverted tag-link-position-16" style="font-size: 1em;" aria-label="email (1 item)">email<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/email-marketing/" class="tag-cloud-link tag-link-145 btn btn-skin-dark-oh inverted tag-link-position-17" style="font-size: 1em;" aria-label="email marketing (1 item)">email marketing<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/familias/" class="tag-cloud-link tag-link-63 btn btn-skin-dark-oh inverted tag-link-position-18" style="font-size: 1em;" aria-label="familias (1 item)">familias<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/filosofia/" class="tag-cloud-link tag-link-52 btn btn-skin-dark-oh inverted tag-link-position-19" style="font-size: 1em;" aria-label="Filosofía (3 items)">Filosofía<span class="tag-link-count"> (3)</span></a>
+<a href="/tag/google/" class="tag-cloud-link tag-link-72 btn btn-skin-dark-oh inverted tag-link-position-20" style="font-size: 1em;" aria-label="google (2 items)">google<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/homeopatia/" class="tag-cloud-link tag-link-64 btn btn-skin-dark-oh inverted tag-link-position-21" style="font-size: 1em;" aria-label="Homeopatía (1 item)">Homeopatía<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/ignorantes/" class="tag-cloud-link tag-link-50 btn btn-skin-dark-oh inverted tag-link-position-22" style="font-size: 1em;" aria-label="Ignorantes (2 items)">Ignorantes<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/innovation/" class="tag-cloud-link tag-link-140 btn btn-skin-dark-oh inverted tag-link-position-23" style="font-size: 1em;" aria-label="innovation (1 item)">innovation<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/itil/" class="tag-cloud-link tag-link-133 btn btn-skin-dark-oh inverted tag-link-position-24" style="font-size: 1em;" aria-label="itil (1 item)">itil<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/mailing/" class="tag-cloud-link tag-link-146 btn btn-skin-dark-oh inverted tag-link-position-25" style="font-size: 1em;" aria-label="mailing (1 item)">mailing<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/marketing/" class="tag-cloud-link tag-link-69 btn btn-skin-dark-oh inverted tag-link-position-26" style="font-size: 1em;" aria-label="marketing (1 item)">marketing<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/metodologia/" class="tag-cloud-link tag-link-129 btn btn-skin-dark-oh inverted tag-link-position-27" style="font-size: 1em;" aria-label="metodologia (1 item)">metodologia<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/movimiento/" class="tag-cloud-link tag-link-59 btn btn-skin-dark-oh inverted tag-link-position-28" style="font-size: 1em;" aria-label="movimiento (1 item)">movimiento<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/programador/" class="tag-cloud-link tag-link-107 btn btn-skin-dark-oh inverted tag-link-position-29" style="font-size: 1em;" aria-label="programador (3 items)">programador<span class="tag-link-count"> (3)</span></a>
+<a href="/tag/psicologia/" class="tag-cloud-link tag-link-53 btn btn-skin-dark-oh inverted tag-link-position-30" style="font-size: 1em;" aria-label="Psicología (2 items)">Psicología<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/pubicista/" class="tag-cloud-link tag-link-108 btn btn-skin-dark-oh inverted tag-link-position-31" style="font-size: 1em;" aria-label="pubicista (2 items)">pubicista<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/publicidad/" class="tag-cloud-link tag-link-70 btn btn-skin-dark-oh inverted tag-link-position-32" style="font-size: 1em;" aria-label="publicidad (2 items)">publicidad<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/religion/" class="tag-cloud-link tag-link-48 btn btn-skin-dark-oh inverted tag-link-position-33" style="font-size: 1em;" aria-label="Religión (2 items)">Religión<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/risks/" class="tag-cloud-link tag-link-141 btn btn-skin-dark-oh inverted tag-link-position-34" style="font-size: 1em;" aria-label="risks (1 item)">risks<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/rup/" class="tag-cloud-link tag-link-132 btn btn-skin-dark-oh inverted tag-link-position-35" style="font-size: 1em;" aria-label="rup (1 item)">rup<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/scrum/" class="tag-cloud-link tag-link-131 btn btn-skin-dark-oh inverted tag-link-position-36" style="font-size: 1em;" aria-label="scrum (2 items)">scrum<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/sectas/" class="tag-cloud-link tag-link-47 btn btn-skin-dark-oh inverted tag-link-position-37" style="font-size: 1em;" aria-label="Sectas (2 items)">Sectas<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/sem/" class="tag-cloud-link tag-link-77 btn btn-skin-dark-oh inverted tag-link-position-38" style="font-size: 1em;" aria-label="sem (1 item)">sem<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/seo/" class="tag-cloud-link tag-link-78 btn btn-skin-dark-oh inverted tag-link-position-39" style="font-size: 1em;" aria-label="seo (1 item)">seo<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/software/" class="tag-cloud-link tag-link-128 btn btn-skin-dark-oh inverted tag-link-position-40" style="font-size: 1em;" aria-label="software (2 items)">software<span class="tag-link-count"> (2)</span></a>
+<a href="/tag/spam/" class="tag-cloud-link tag-link-74 btn btn-skin-dark-oh inverted tag-link-position-41" style="font-size: 1em;" aria-label="spam (1 item)">spam<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/ugly-truth/" class="tag-cloud-link tag-link-142 btn btn-skin-dark-oh inverted tag-link-position-42" style="font-size: 1em;" aria-label="ugly truth (1 item)">ugly truth<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/videos/" class="tag-cloud-link tag-link-65 btn btn-skin-dark-oh inverted tag-link-position-43" style="font-size: 1em;" aria-label="videos (1 item)">videos<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/webcam/" class="tag-cloud-link tag-link-60 btn btn-skin-dark-oh inverted tag-link-position-44" style="font-size: 1em;" aria-label="webcam (1 item)">webcam<span class="tag-link-count"> (1)</span></a>
+<a href="/tag/web-development/" class="tag-cloud-link tag-link-134 btn btn-skin-dark-oh inverted tag-link-position-45" style="font-size: 1em;" aria-label="web development (2 items)">web development<span class="tag-link-count"> (2)</span></a></div>
+</aside> </div>
+</div>
+</div>
+</div>
+<div id="czr-push-footer"></div>
+</div>
+<div class="container-fluid">
+<div class="post-navigation row">
+<nav id="nav-below" class="col-12">
+<h2 class="sr-only">Post navigation</h2>
+<ul class="czr_pager row flex-row flex-no-wrap">
+<li class="previous col-5 text-left">
+<span class="sr-only">Previous post</span>
+<span class="nav-previous nav-dir"><a href="/2011/11/14/ahora-que-flash-murio/" rel="prev"><span class="meta-nav"><i class="arrow icn-left-open-big"></i><span class="meta-nav-title">Ahora que flash murió.</span></span></a></span>
+</li>
+<li class="nav-back col-2 text-center">
+<a href="/" title="Back to post list">
+<span><i class="icn-grid-empty"></i></span>
+<span class="sr-only">Back to post list</span>
+</a>
+</li>
+<li class="next col-5 text-right">
+<span class="sr-only">Next post</span>
+<span class="nav-next nav-dir"><a href="/2013/01/23/publicista-digital/" rel="next"><span class="meta-nav"><span class="meta-nav-title">Para el publicista clásico que empieza en digital (There and Back Again)</span><i class="arrow icn-right-open-big"></i></span></a></span>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<footer id="footer" class="footer__wrapper">
+<div id="footer-widget-area" class="widget__wrapper" role="complementary">
+<div class="container widget__container">
+<div class="row">
+<div id="footer_one" class="col-md-4 col-12">
+<aside id="calendar-7" class="widget widget_calendar"><h5 class="widget-title">Articles</h5><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar" class="wp-calendar-table">
+<caption>August 2012</caption>
+<thead>
+<tr>
+<th scope="col" title="Monday">M</th>
+<th scope="col" title="Tuesday">T</th>
+<th scope="col" title="Wednesday">W</th>
+<th scope="col" title="Thursday">T</th>
+<th scope="col" title="Friday">F</th>
+<th scope="col" title="Saturday">S</th>
+<th scope="col" title="Sunday">S</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+</tr>
+<tr>
+<td><a href="/2012/08/06/" aria-label="Posts published on August 6, 2012">6</a></td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+</tr>
+<tr>
+<td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+</tr>
+<tr>
+<td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+</tr>
+<tr>
+<td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+<td class="pad" colspan="2">&nbsp;</td>
+</tr>
+</tbody>
+</table><nav aria-label="Previous and next months" class="wp-calendar-nav">
+<span class="wp-calendar-nav-prev"><a href="/2011/11/">&laquo; Nov</a></span>
+<span class="pad">&nbsp;</span>
+<span class="wp-calendar-nav-next"><a href="/2013/01/">Jan &raquo;</a></span>
+</nav></div></aside> </div>
+<div id="footer_two" class="col-md-4 col-12">
+<aside id="categories-7" class="widget widget_categories"><h5 class="widget-title">Categories</h5><form action="/" method="get"><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform'>
+<option value='-1'>Select Category</option>
+<option class="level-0" value="85">Conferencias&nbsp;&nbsp;(1)</option>
+<option class="level-0" value="94">Ignorancia&nbsp;&nbsp;(1)</option>
+<option class="level-0" value="127">Management&nbsp;&nbsp;(2)</option>
+<option class="level-0" value="76">Marketing&nbsp;&nbsp;(7)</option>
+<option class="level-0" value="79">Programación&nbsp;&nbsp;(6)</option>
+<option class="level-1" value="120">&nbsp;&nbsp;&nbsp;Git&nbsp;&nbsp;(2)</option>
+<option class="level-0" value="75">Publicidad&nbsp;&nbsp;(6)</option>
+<option class="level-0" value="1">Quantium&nbsp;&nbsp;(55)</option>
+<option class="level-1" value="7">&nbsp;&nbsp;&nbsp;Desarrollo&nbsp;&nbsp;(25)</option>
+<option class="level-2" value="97">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;javascript&nbsp;&nbsp;(1)</option>
+<option class="level-3" value="98">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node.js&nbsp;&nbsp;(1)</option>
+<option class="level-1" value="61">&nbsp;&nbsp;&nbsp;filosofía&nbsp;&nbsp;(2)</option>
+<option class="level-0" value="159">SCRUM&nbsp;&nbsp;(1)</option>
+<option class="level-0" value="135">Technology&nbsp;&nbsp;(5)</option>
+<option class="level-0" value="44">Ubuntu&nbsp;&nbsp;(2)</option>
+<option class="level-0" value="25">AIR&nbsp;&nbsp;(2)</option>
+<option class="level-0" value="5">Flex&nbsp;&nbsp;(8)</option>
+<option class="level-0" value="11">PaperVision3d&nbsp;&nbsp;(5)</option>
+</select>
+</form>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+</aside> </div>
+ <div id="footer_three" class="col-md-4 col-12">
+<aside id="recent-comments-3" class="widget widget_recent_comments"><h5 class="widget-title">Recent Comments</h5><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='http://thoughts.ktcagency.com/5-principios-para-las-marcas-del-futuro/' rel='external nofollow ugc' class='url'>5 principios para las marcas del futuro | ktc Thoughts</a></span> on <a href="/2014/09/29/7-cosas-que-big-data-no-va-a-resolver/comment-page-1/#comment-39056">7 cosas que Big Data no va a resolver</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://thoughts.ktcagency.com/internet-de-las-cosas/' rel='external nofollow ugc' class='url'>Internet de las cosas | ktc Thoughts</a></span> on <a href="/2014/09/29/7-cosas-que-big-data-no-va-a-resolver/comment-page-1/#comment-39055">7 cosas que Big Data no va a resolver</a></li><li class="recentcomments"><span class="comment-author-link">pacosoul</span> on <a href="/2012/08/06/nodejs/comment-page-1/#comment-39053">Como funciona Node.js</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.pablonimo.com/blog/2012/01/18/ferramentas-de-autor-cuadernia-baseada-en-flash/' rel='external nofollow ugc' class='url'>Ferramentas de autor: Cuadernia baseada en Flash &laquo; Pablo Nimo &#8211; Educación e TIC</a></span> on <a href="/2011/11/14/ahora-que-flash-murio/comment-page-1/#comment-39052">Ahora que flash murió.</a></li><li class="recentcomments"><span class="comment-author-link">Mayi Suárez Rosés</span> on <a href="/2007/07/06/nietos-de-espanoles/comment-page-2/#comment-39046">Nietos de españoles</a></li></ul></aside> </div>
+</div>
+</div>
+</div>
+<div id="colophon" class="colophon">
+<div class="container">
+<div class="colophon__row row flex-row justify-content-between">
+<div class="col-12 col-sm-auto">
+<div id="footer__credits" class="footer__credits">
+<p class="czr-copyright">
+<span class="czr-copyright-text">&copy;&nbsp;2020&nbsp;</span><a class="czr-copyright-link" href="/" title="Quantium">Quantium</a><span class="czr-rights-text">&nbsp;&ndash;&nbsp;All rights reserved</span>
+</p>
+<p class="czr-credits">
+<span class="czr-designer">
+<span class="czr-wp-powered"><span class="czr-wp-powered-text">Powered by&nbsp;</span><a class="czr-wp-powered-link fab fa-wordpress" title="Powered by WordPress" href="https://wordpress.org/" target="_blank" rel="noopener noreferrer"></a></span><span class="czr-designer-text">&nbsp;&ndash;&nbsp;Designed with the <a class="czr-designer-link" href="https://presscustomizr.com/customizr" title="Customizr theme">Customizr theme</a></span>
+</span>
+</p>
+</div>
+</div>
+<div class="col-12 col-sm-auto">
+<div class="social-links">
+<ul class="socials">
+<li><a rel="nofollow noopener noreferrer" class="social-icon icon-feed" title="Subscribe to my rss feed" aria-label="Subscribe to my rss feed" href="/feed/rss/" target="_blank" style="font-size:12px"><i class="fas fa-rss"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-expeditedssl" title="Download Brave Browser" aria-label="Download Brave Browser" href="https://brave.com/qua433" target="_blank" style="color:#f32020;font-size:12px"><i class="fab fa-expeditedssl"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-spotify" title="Follow us on Spotify" aria-label="Follow us on Spotify" href="https://open.spotify.com/user/quantium-mx?si=3znnUidiSA2A9EEx8PFnGw" target="_blank" style="color:#8aef42;font-size:12px"><i class="fab fa-spotify"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-angellist" title="Follow me on Angellist" aria-label="Follow me on Angellist" href="https://angel.co/andres-gonzalez-aragon" target="_blank" style="color:#a667e9;font-size:12px"><i class="fab fa-angellist"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-linkedin" title="Follow us on Linkedin" aria-label="Follow us on Linkedin" href="https://www.linkedin.com/in/quantium/" target="_blank" style="color:#2749e1;font-size:12px"><i class="fab fa-linkedin"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-twitter" title="Follow us on Twitter" aria-label="Follow us on Twitter" href="https://twitter.com/Quantium" target="_blank" style="color:#8464dd;font-size:12px"><i class="fab fa-twitter"></i></a></li> <li><a rel="nofollow noopener noreferrer" class="social-icon icon-github" title="Follow us on Github" aria-label="Follow us on Github" href="https://github.com/Quantium" target="_blank" style="font-size:12px"><i class="fab fa-github"></i></a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<button class="btn czr-btt czr-btta right"><i class="icn-up-small"></i></button>
+<script type='text/javascript' src='/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='/wp-content/themes/customizr/assets/front/js/libs/retina.min.js?ver=4.3.3' id='retinajs-js'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=5.5.1' id='wp-embed-js'></script>
+</body>
+</html>

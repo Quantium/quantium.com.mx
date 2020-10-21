@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Como funciona Node.js	</title>
+	<atom:link href="/2012/08/06/nodejs/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/08/06/nodejs/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Wed, 26 Feb 2014 22:13:08 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+	<item>
+		<title>
+		By: pacosoul		</title>
+		<link>/2012/08/06/nodejs/comment-page-1/#comment-39053</link>
+
+		<dc:creator><![CDATA[pacosoul]]></dc:creator>
+		<pubDate>Tue, 11 Sep 2012 21:17:19 +0000</pubDate>
+		<guid isPermaLink="false">/?p=320#comment-39053</guid>
+
+					<description><![CDATA[Buena onda esta la de compartir los primeros pininos, - y sí- ya muchos le quieren apostar duro a NodeJS, en lo personal lo de la curva de aprendizaje me llama mucho la atención: tiempo tiempo tiempo.
+
+Una combinación explosiva con Mongo DB, lo que seguramente nos permitiré ver apps hecha en menos tiempo y con una viveza o dinamismo y conexión a otras APIs: tuiter, feisbu, google, etc.
+
+Seguiré pendiente y probando...]]></description>
+			<content:encoded><![CDATA[<p>Buena onda esta la de compartir los primeros pininos, &#8211; y sí- ya muchos le quieren apostar duro a NodeJS, en lo personal lo de la curva de aprendizaje me llama mucho la atención: tiempo tiempo tiempo.</p>
+<p>Una combinación explosiva con Mongo DB, lo que seguramente nos permitiré ver apps hecha en menos tiempo y con una viveza o dinamismo y conexión a otras APIs: tuiter, feisbu, google, etc.</p>
+<p>Seguiré pendiente y probando&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

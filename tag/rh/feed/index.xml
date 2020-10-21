@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>RH &#8211; Quantium</title>
+	<atom:link href="/tag/rh/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Andrés Gónzález Aragón &#124; Technolgy and more</description>
+	<lastBuildDate>Fri, 29 Aug 2014 22:56:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.5.1</generator>
+                                          	<item>
+		<title>Entrevistando becarios de tecnología para una agencia de marketing digital.</title>
+		<link>/2014/07/15/entrevistando-becarios-de-tecnologia-para-una-agencia-de-marketing-digital/</link>
+		
+		<dc:creator><![CDATA[Andrés González Aragón]]></dc:creator>
+		<pubDate>Tue, 15 Jul 2014 22:11:43 +0000</pubDate>
+				<category><![CDATA[Desarrollo]]></category>
+		<category><![CDATA[Ignorancia]]></category>
+		<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[Publicidad]]></category>
+		<category><![CDATA[Quantium]]></category>
+		<category><![CDATA[becarios]]></category>
+		<category><![CDATA[entrevistas]]></category>
+		<category><![CDATA[pasantes]]></category>
+		<category><![CDATA[Recursos humanos]]></category>
+		<category><![CDATA[RH]]></category>
+		<guid isPermaLink="false">/?p=457</guid>
+
+					<description><![CDATA[<p>Empieza el verano y acá en ktc se abre el programa de becarios, lo que me ha llevado a pasar las últimas 2 semanas entrevistando ingenieros en gestación de 4 universidades, 2 públicas y 2 privadas, desde 4 cuatrimestre hasta último semestre de la carrera o en proceso de titulación ya con todos los créditos [&#8230;]</p>
+<p>The post <a href="/2014/07/15/entrevistando-becarios-de-tecnologia-para-una-agencia-de-marketing-digital/" target="_blank">Entrevistando becarios de tecnología para una agencia de marketing digital.</a> first appeared on <a href="/" target="_blank">Quantium</a>.</p>]]></description>
+		
+		
+		
+			</item>
+	                                          </channel>
+</rss>
